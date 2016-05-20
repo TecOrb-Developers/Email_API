@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Email</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	 <nav class="navbar navbar-dark bg-primary navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed " data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar bg-white"></span>
+            <span class="icon-bar bg-white"></span>
+            <span class="icon-bar bg-white"></span>
+          </button>
+          <%if current_user%>
+          <strong><a class="navbar-brand hyper1" href="#" data-no-turbolink = true>Welcome</a></strong>
+          <%else%>
+          <strong><a class="navbar-brand hyper1" href="#" data-no-turbolink = true>MeDGuest</a></strong>
+          <%end%>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right margin-right" data-no-turbolink = true>
+            <%if current_user%>
+              <li>
+                <%= link_to "Upload CSV",new_upload_csv_path,:class=>"hyper"%>
+              </li>
+              <li>
+                <%= link_to "Log-out",admin_user_path(current_user.id),method: :delete,:class=>"hyper"%>
+              </li>
+            <%else%>
+              <li>
+                <a class="hyper" data-toggle="modal" href="#login"></a>
+              </li>
+            <%end%>
+          </ul>
+        </div>
+      </div><!--/.container-fluid -->
+    </nav>
+
+<%= yield %>
+ <footer class="footer">
+      <div class="container">
+        <p class="text-muted margin-top-4">Copyright TecOrb - WeCost Inc. © 2016. All Rights Reserved</p>
+      </div>
+    </footer>
+</body>
+</html>

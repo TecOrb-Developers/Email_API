@@ -1,0 +1,21 @@
+
+default: &default
+  adapter: postgresql
+  username: postgres
+  password: postgres
+  host: localhost
+  port: 5432
+  pool: 10
+  timeout: 5000
+
+development:
+  <<: *default
+  database: email_development
+
+test:
+  <<: *default
+  database: email_test
+
+production:
+  <<: *default
+  database: email_production

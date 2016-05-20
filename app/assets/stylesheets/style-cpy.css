@@ -1,0 +1,3898 @@
+.job_listing-clickbox {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 20
+}
+
+
+.category-list li a,
+.ellipseit,
+.filter_by_tag a,
+.job_types li,
+.listify_widget_panel_listing_tags a,
+.listings-by-term-content,
+.type-job_listing .job_listing-entry-header .job_listing-location {
+    font-size: 100%!important;
+    position: relative;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+.category-list li a,
+.filter_by_tag a,
+.job_types li,
+.listings-by-term-content {
+    margin-bottom: 10px;
+    margin-right: 15px
+}
+@media (min-width: 768px) {
+    .filter_by_tag a,
+    .job_types li {
+        width: 48%;
+        margin-right: 1%
+    }
+}
+@media (min-width: 992px) {
+    .filter_by_tag a,
+    .job_types li {
+        width: 31%
+    }
+}
+@media (min-width: 1200px) {
+    .filter_by_tag a,
+    .job_types li {
+        width: 23%
+    }
+}
+.filter_by_tag a:before {
+    content: ' ';
+    margin-right: 10px
+}
+.filter_by_tag a:after {
+    content: ' ';
+    position: absolute;
+    top: 6px;
+    left: 6px
+}
+.filter_by_tag a.active {
+    background: 0 0
+}
+.filter_by_tag a.active:after {
+    content: '\f121'
+}
+.archive-job_listing-toggle-wrapper {
+    box-shadow: inset rgba(0, 0, 0, .03) 0 100px 0 0, rgba(0, 0, 0, .08) 0 1px 0 0
+}
+.archive-job_listing-toggle-inner {
+    text-align: center;
+    line-height: normal;
+    border-radius: 3px;
+    margin: 1em auto;
+    padding: 0;
+    display: inline-block;
+    vertical-align: middle
+}
+.archive-job_listing-toggle-inner .archive-job_listing-toggle {
+    text-align: center;
+    padding: 6px 18px;
+    border: 2px solid transparent;
+    display: inline-block
+}
+.archive-job_listing-toggle-inner .archive-job_listing-toggle:first-child {
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px
+}
+.archive-job_listing-toggle-inner .archive-job_listing-toggle:last-child {
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px
+}
+.archive-job_listing-toggle-inner.views {
+    width: 100%
+}
+.archive-job_listing-toggle-inner.views .archive-job_listing-toggle {
+    width: 50%
+}
+@media (min-width: 992px) {
+    body:not(.fixed-map) .job_listings-map {
+        position: relative;
+        height: 350px;
+        display: block
+    }
+    .archive-job_listing-toggle-wrapper {
+        display: none
+    }
+}
+body.map-toggled {
+    overflow: hidden
+}
+body.map-toggled .footer-wrapper,
+body.map-toggled .site-header {
+    display: none
+}
+body.map-toggled .job_listings-map {
+    position: fixed;
+    top: auto;
+    right: auto;
+    left: auto;
+    bottom: auto;
+    background: rgba(0, 0, 0, .25);
+    height: 100%;
+    width: 100%;
+    min-height: 300px;
+    overflow: hidden;
+    z-index: 5
+}
+body.fixed-map .container {
+    max-width: 100%;
+    padding-left: 30px;
+    padding-right: 30px
+}
+body.fixed-map .site-footer,
+body.footer-light .site-footer {
+    background: 0 0;
+    padding: 1em 0;
+    opacity: .8
+}
+body.fixed-map .site-footer:hover,
+body.footer-light .site-footer:hover {
+    opacity: 1
+}
+@media (min-width: 992px) {
+    body.fixed-map.fixed-header {
+        padding-top: 0
+    }
+    body.fixed-map .site-header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 100
+    }
+    body.admin-bar.fixed-map .site-header {
+        top: 32px
+    }
+    body.fixed-map .job_listings-map-wrapper {
+        position: fixed;
+        top: 130px;
+        left: 0;
+        bottom: 0;
+        width: 35%;
+        height: 100%
+    }
+    body.fixed-map .footer-wrapper,
+    body.fixed-map .site-content {
+        width: 65%;
+        margin-left: 35%
+    }
+    body.fixed-map .footer-wrapper {
+        margin-top: 0
+    }
+}
+@media (min-width: 1200px) {
+    body.fixed-map .job_listings-map-wrapper {
+        width: 40%
+    }
+    body.fixed-map .job_listings-map {
+        height: 100%
+    }
+    body.fixed-map .footer-wrapper,
+    body.fixed-map .site-content {
+        width: 60%;
+        margin-left: 40%
+    }
+}
+#job_listings-map-canvas {
+    width: 100%;
+    height: 100%
+}
+@media (min-width: 992px) {
+    .archive-job_listing-filters-wrapper.side {
+        position: relative;
+        z-index: 10
+    }
+}
+
+
+
+.type-job_listing.style-grid .job_listing-entry-footer {
+    padding: 1em 2em
+}
+.job_listing-entry-footer .job-manager-form.wp-job-manager-bookmarks-form,
+.job_listing-entry-footer .job_listing-rating-wrapper {
+    position: relative;
+    z-index: 25;
+    line-height: normal
+}
+.job_listing-entry-footer .star-icon {
+    font-size: 17px;
+    margin-top: 1px;
+    display: inline-block
+}
+.job_listing-entry-footer .job_listing-rating-average {
+    margin: 0 0 0 5px;
+    width: 28px;
+    height: 28px;
+    line-height: 28px
+}
+.job_listing-entry-footer .job_listing-rating-count {
+    margin-left: 5px;
+    display: none
+}
+
+.type-job_listing.style-list .job_listing-entry-footer,
+.type-job_listing.style-list .job_listing-entry-header,
+.type-job_listing.style-list .job_listing-entry-meta,
+.type-job_listing.style-list .job_listing-entry-thumbnail {
+    position: relative;
+    min-height: 1px;
+    display: table-cell;
+    vertical-align: middle
+}
+
+.type-job_listing.style-list .job_listing-entry-footer,
+.type-job_listing.style-list .job_listing-entry-thumbnail {
+    display: none
+}
+@media (min-width: 768px) {
+    .type-job_listing.style-list .job_listing-entry-thumbnail {
+        display: table-cell
+    }
+}
+@media (min-width: 992px) {
+    .type-job_listing.style-list .job_listing-entry-footer {
+        display: table-cell
+    }
+    .type-job_listing.style-list .job_listing-entry-header {
+        width: 65%
+    }
+    .type-job_listing.style-list .job_listing-entry-footer {
+        width: auto;
+        text-align: right
+    }
+}
+
+.job_listing-entry-footer .wp-job-manager-bookmarks-form {
+    float: right
+}
+.job_listing-entry-footer .wp-job-manager-bookmarks-form .bookmark-notice:before {
+    color: #e27276
+}
+.type-job_listing.style-list .job_listing-entry-footer .job-manager-form.wp-job-manager-bookmarks-form {
+    margin-left: 10px
+}
+
+.job_listing-rating-wrapper {
+    margin-top: -3px
+}
+.job_listing-rating-wrapper,
+.job_listing-rating-wrapper>span {
+    vertical-align: middle;
+    display: inline-block
+}
+
+.job_listing-entry-footer .job-manager-form.wp-job-manager-bookmarks-form,
+.job_listing-entry-footer .job_listing-rating-wrapper {
+    position: relative;
+    z-index: 25;
+    line-height: normal
+}
+
+.listings-by-term-content .job_listing-rating-wrapper {
+    display: block
+}
+
+.job-manager-form h2
+{
+    font-size: 16px;
+    margin: 1.25em 0;
+    padding: 0 0 .75em;
+    border-bottom: 2px solid #e9edf2
+}
+
+.job-manager-form:before
+{
+    font-size: 26px;
+    vertical-align: middle;
+    margin-right: 10px;
+    margin-top: -4px
+}
+
+.job-manager-form .template-home .homepage-cover.has-map fieldset.fieldset-job_hours,
+.job-manager-form .template-home .listify_widget_search_listings fieldset.fieldset-job_hours,
+.summary .template-home .homepage-cover.has-map .stock,
+.summary .template-home .listify_widget_search_listings .stock,
+.template-home .homepage-cover.has-map .account-sign-in,
+.template-home .homepage-cover.has-map .filter-by-type-label,
+.template-home .homepage-cover.has-map .filter_by_tag,
+.template-home .homepage-cover.has-map .job-manager-form fieldset.fieldset-job_hours,
+.template-home .homepage-cover.has-map .job-manager-pagination,
+.template-home .homepage-cover.has-map .job_types,
+.template-home .homepage-cover.has-map .load_more_jobs,
+.template-home .homepage-cover.has-map .ninja-forms-required-items,
+.template-home .homepage-cover.has-map .search-radius-wrapper,
+.template-home .homepage-cover.has-map .showing_jobs,
+.template-home .homepage-cover.has-map .summary .stock,
+.template-home .homepage-cover.has-map .woocommerce-tabs .woocommerce-noreviews,
+.template-home .listify_widget_search_listings .account-sign-in,
+.template-home .listify_widget_search_listings .filter-by-type-label,
+.template-home .listify_widget_search_listings .filter_by_tag,
+.template-home .listify_widget_search_listings .job-manager-form fieldset.fieldset-job_hours,
+.template-home .listify_widget_search_listings .job-manager-pagination,
+.template-home .listify_widget_search_listings .job_types,
+.template-home .listify_widget_search_listings .load_more_jobs,
+.template-home .listify_widget_search_listings .ninja-forms-required-items,
+.template-home .listify_widget_search_listings .search-radius-wrapper,
+.template-home .listify_widget_search_listings .showing_jobs,
+.template-home .listify_widget_search_listings .summary .stock,
+.template-home .listify_widget_search_listings .woocommerce-tabs .woocommerce-noreviews,
+.woocommerce-tabs .template-home .homepage-cover.has-map .woocommerce-noreviews,
+.woocommerce-tabs .template-home .listify_widget_search_listings .woocommerce-noreviews {
+    display: none!important
+}
+
+.job-manager-form fieldset {
+    border: 0;
+    margin: 0 0 2em;
+    padding: 0
+}
+.job-manager-form input[type=email],
+.job-manager-form input[type=text] {
+    width: 100%
+}
+
+.job-manager-form h2 {
+    margin: 2em 0;
+    padding: .75em 0
+}
+
+
+
+
+.job-manager-form fieldset.fieldset-job_hours,
+.ninja-forms-required-items,
+.showing_jobs,
+.summary .stock,
+.woocommerce-tabs .woocommerce-noreviews {
+    color: #b4bcc7;
+    margin-top: 1em;
+    padding: 1em;
+    border: 1px solid #e9edf2;
+    border-radius: 4px
+}
+.account-sign-in span,
+.job-manager-form fieldset.fieldset-job_hours span,
+.ninja-forms-required-items span,
+.showing_jobs span,
+.summary .stock span,
+.woocommerce-tabs .woocommerce-noreviews span {
+    display: block;
+    margin-bottom: 1em
+}
+.account-sign-in .reset,
+.account-sign-in .rss_link,
+.job-manager-form fieldset.fieldset-job_hours .reset,
+.job-manager-form fieldset.fieldset-job_hours .rss_link,
+.ninja-forms-required-items .reset,
+.ninja-forms-required-items .rss_link,
+.showing_jobs .reset,
+.showing_jobs .rss_link,
+.summary .stock .reset,
+.summary .stock .rss_link,
+.woocommerce-tabs .woocommerce-noreviews .reset,
+.woocommerce-tabs .woocommerce-noreviews .rss_link {
+    float: none;
+    display: inline-block;
+    margin-left: 0;
+    margin-right: 15px
+}
+.account-sign-in .reset:before,
+.account-sign-in .rss_link:before,
+.job-manager-form fieldset.fieldset-job_hours .reset:before,
+.job-manager-form fieldset.fieldset-job_hours .rss_link:before,
+.ninja-forms-required-items .reset:before,
+.ninja-forms-required-items .rss_link:before,
+.showing_jobs .reset:before,
+.showing_jobs .rss_link:before,
+.summary .stock .reset:before,
+.summary .stock .rss_link:before,
+.woocommerce-tabs .woocommerce-noreviews .reset:before,
+.woocommerce-tabs .woocommerce-noreviews .rss_link:before {
+    display: inline-block;
+    font-family: Ionicons;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    text-rendering: auto;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin-right: 4px
+}
+.account-sign-in .rss_link,
+.job-manager-form fieldset.fieldset-job_hours .rss_link,
+.ninja-forms-required-items .rss_link,
+.showing_jobs .rss_link,
+.summary .stock .rss_link,
+.woocommerce-tabs .woocommerce-noreviews .rss_link {
+    color: #f60
+}
+.account-sign-in .rss_link:before,
+.job-manager-form fieldset.fieldset-job_hours .rss_link:before,
+.ninja-forms-required-items .rss_link:before,
+.showing_jobs .rss_link:before,
+.summary .stock .rss_link:before,
+.woocommerce-tabs .woocommerce-noreviews .rss_link:before {
+    content: '\f23d'
+}
+.account-sign-in .reset:before,
+.job-manager-form fieldset.fieldset-job_hours .reset:before,
+.ninja-forms-required-items .reset:before,
+.showing_jobs .reset:before,
+.summary .stock .reset:before,
+.woocommerce-tabs .woocommerce-noreviews .reset:before {
+    content: '\f2d7'
+}
+.job_listings.loading {
+    min-height: 50px
+}
+.job_listings.loading:before {
+    font-family: Ionicons;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    text-rendering: auto;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: '\f29c';
+    font-size: 50px;
+    margin: 0 auto;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin-left: -25px;
+    -webkit-animation: rotate 800ms infinite linear;
+    -moz-animation: rotate 800ms infinite linear;
+    animation: rotate 800ms infinite linear
+}
+.content-shop-wrapper .field.account-sign-in .added_to_cart,
+.content-single-job_listing-gallery-wrapper .type-attachment .field.account-sign-in .comment-count,
+.field.account-sign-in .button,
+.field.account-sign-in .content-shop-wrapper .added_to_cart,
+.field.account-sign-in .content-single-job_listing-gallery-wrapper .type-attachment .comment-count,
+.field.account-sign-in .load_more_jobs {
+    float: right
+}
+.job-manager-form fieldset.fieldset-job_hours {
+    border-width: 2px
+}
+.fieldset-job_hours .field {
+    margin-top: 1em;
+    display: none
+}
+.fieldset-job_hours .field table {
+    margin-bottom: 0
+}
+.fieldset-job_hours label {
+    display: block
+}
+.fieldset-job_hours label:before {
+    font-family: Ionicons;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    text-rendering: auto;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: '\f48a';
+    font-size: 24px;
+    vertical-align: middle;
+    display: inline-block;
+    margin: -3px 8px 0 0
+}
+.fieldset-job_hours.open label:before {
+    content: '\f463'
+}
+.job-manager-term-checklist {
+    margin: 1em 0 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden
+}
+.job-manager-term-checklist li {
+    margin-bottom: 10px
+}
+@media (min-width: 768px) {
+    .job-manager-term-checklist li {
+        width: 50%;
+        float: left
+    }
+}
+@media (min-width: 992px) {
+    .job-manager-term-checklist li {
+        width: 33%;
+        float: left
+    }
+}
+@media (min-width: 1200px) {
+    .job-manager-term-checklist li {
+        width: 25%;
+        float: left
+    }
+}
+#submit-job-form h2,
+#submit-job-form.job-manager-form fieldset:first-child label {
+    display: none
+}
+.entry-content div.mce-toolbar-grp {
+    border-bottom-width: 2px
+}
+body .job-manager-form .chosen-container-multi .chosen-choices {
+    margin-top: 1em
+}
+.job-manager-jobs td.job_title {
+    font-size: 15px
+}
+.job-dashboard-actions a,
+.job-manager-jobs td.date,
+.job-manager-jobs td.expires {
+    font-size: 12px
+}
+.job-dashboard-actions {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+.job-dashboard-actions li {
+    display: inline-block
+}
+.job-dashboard-actions li a {
+    margin-right: 10px
+}
+.job-dashboard-action-delete:before,
+.job-dashboard-action-edit:before,
+.job-dashboard-action-mark_filled:before,
+.job-dashboard-action-mark_not_filled:before,
+.job-dashboard-action-relist:before {
+    display: inline-block;
+    font-family: Ionicons;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    text-rendering: auto;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin-right: 3px
+}
+.job-dashboard-action-edit:before {
+    content: '\f2bf'
+}
+.job-dashboard-action-mark_filled:before {
+    content: '\f400'
+}
+.job-dashboard-action-mark_not_filled:before {
+    content: '\f401'
+}
+.job-dashboard-action-relist:before {
+    content: '\f201'
+}
+.job-dashboard-actions a.job-dashboard-action-delete:before,
+.job-dashboard-actions a.job-dashboard-action-delete:hover {
+    color: #A00
+}
+.job-dashboard-action-delete:before {
+    content: '\f12a'
+}
+.directory-fields .job-dashboard-action-mark_filled,
+.directory-fields td.filled,
+.directory-fields th.filled {
+    display: none
+}
+.job-manager-pagination ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center
+}
+.job-manager-pagination a,
+.job-manager-pagination li {
+    display: inline-block
+}
+.job-manager-uploaded-files .job-manager-uploaded-file {
+    display: inline-block;
+    margin: 0 10px 40px 0;
+    position: relative;
+    vertical-align: top
+}
+.job-manager-uploaded-files .job-manager-uploaded-file-preview {
+    display: inline-block;
+    position: relative
+}
+.job-manager-uploaded-files .job-manager-uploaded-file-preview img {
+    max-width: 100px
+}
+.job-manager-uploaded-files .job-manager-remove-uploaded-file {
+    font-size: 0;
+    position: absolute;
+    bottom: -17px;
+    left: 0
+}
+.job-manager-uploaded-files .job-manager-remove-uploaded-file:before {
+    display: inline-block;
+    font-family: Ionicons;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    text-rendering: auto;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: '\f129';
+    font-size: 12px
+}
+.job_listing-entry-footer .wp-job-manager-bookmarks-form {
+    float: right
+}
+.job_listing-entry-footer .wp-job-manager-bookmarks-form .bookmark-notice:before {
+    color: #e27276
+}
+.wp-job-manager-bookmarks-form,
+.wp-job-manager-bookmarks-form>div:first-child {
+    display: inline-block;
+    margin: 0;
+    border: 0
+}
+.content-single-job_listing-hero .wp-job-manager-bookmarks-form {
+    vertical-align: middle;
+    margin: -1px 10px 0 15px
+}
+.wp-job-manager-bookmarks-count {
+    font-size: 16px;
+    display: inline-block;
+    vertical-align: middle
+}
+.popup .bookmark-notice,
+div.bookmark-details,
+form.wp-job-manager-bookmarks-form .remove-bookmark {
+    display: none
+}
+.popup form.wp-job-manager-bookmarks-form {
+    display: block;
+    margin-left: 0
+}
+.popup form.wp-job-manager-bookmarks-form .remove-bookmark,
+.popup form.wp-job-manager-bookmarks-form div.bookmark-details {
+    display: block
+}
+.popup form.wp-job-manager-bookmarks-form .remove-bookmark {
+    color: red;
+    margin-bottom: 1em
+}
+.popup form.wp-job-manager-bookmarks-form div.bookmark-details textarea {
+    width: 100%
+}
+.popup form.wp-job-manager-bookmarks-form div.bookmark-details p:last-child {
+    margin-bottom: 0
+}
+.popup div.wp-job-manager-bookmarks-form {
+    display: block;
+    margin: 0
+}
+.popup div.wp-job-manager-bookmarks-form>div {
+    display: block
+}
+.popup div.wp-job-manager-bookmarks-form .bookmark-notice {
+    font-size: 16px;
+    display: block
+}
+.popup div.wp-job-manager-bookmarks-form .bookmark-notice:before {
+    display: none
+}
+.wp-job-manager-bookmarks-form .bookmark-notice {
+    font-size: 0
+}
+.wp-job-manager-bookmarks-form .bookmark-notice:before {
+    display: inline-block;
+    font-family: Ionicons;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    text-rendering: auto;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 26px;
+    content: '\f387'
+}
+.wp-job-manager-bookmarks-form .bookmark-notice.bookmarked:before {
+    color: #de6a6f;
+    content: '\f388'
+}
+table.job-manager-bookmarks td {
+    vertical-align: top
+}
+.job-manager-bookmark-actions {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+.job-manager-bookmark-actions li {
+    display: inline-block
+}
+.type-job_listing.style-list .job_listing-entry-footer .job-manager-form.wp-job-manager-bookmarks-form {
+    margin-left: 10px
+}
+#wpjmr-submit-ratings .choose-rating [class*=star]:not(.star-rating-title):before,
+.comment-form-rating .stars [class*=star]:not(.star-rating-title):before,
+.star-rating [class*=star]:not(.star-rating-title):before,
+.stars-rating [class*=star]:not(.star-rating-title):before {
+    display: inline-block;
+    font-family: Ionicons;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    text-rendering: auto;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "ï’²";
+    font-size: 17px;
+    width: auto;
+    height: auto
+}
+#wpjmr-submit-ratings .choose-rating .dashicons-star-filled:before,
+#wpjmr-submit-ratings .choose-rating [class*=star].active:before,
+#wpjmr-submit-ratings .choose-rating [class*=star].hover:before,
+.comment-form-rating .stars .dashicons-star-filled:before,
+.comment-form-rating .stars [class*=star].active:before,
+.comment-form-rating .stars [class*=star].hover:before,
+.star-rating .dashicons-star-filled:before,
+.star-rating [class*=star].active:before,
+.star-rating [class*=star].hover:before,
+.stars-rating .dashicons-star-filled:before,
+.stars-rating [class*=star].active:before,
+.stars-rating [class*=star].hover:before {
+    content: "ï’³"!important
+}
+#wpjmr-submit-ratings .choose-rating .dashicons,
+.comment-form-rating .stars .dashicons,
+.star-rating .dashicons,
+.stars-rating .dashicons {
+    width: auto;
+    height: auto;
+    line-height: 12px
+}
+.content-single-job_listing-hero-company .stars-rating {
+    display: inline-block;
+    vertical-align: middle
+}
+.content-single-job_listing-hero-company .stars-rating [class*=star]:before {
+    font-size: 23px
+}
+.content-single-job_listing-hero-company .stars-rating .dashicons-star-filled:not(.star-rating-title):before {
+    color: #fff;
+    content: "ï’³"!important
+}
+.content-single-job_listing-hero-company .has-image .stars-rating .dashicons:before,
+.content-single-job_listing-hero-company .has-image .stars-rating [class*=star]:before {
+    color: #fff
+}
+#wpjmr-submit-ratings.review-form-stars,
+.comment-form-rating {
+    margin-bottom: 24px
+}
+#wpjmr-submit-ratings.review-form-stars label,
+.comment-form-rating label {
+    font-size: 15px;
+    display: inline-block;
+    vertical-align: middle;
+    min-width: 150px
+}
+#wpjmr-submit-ratings.review-form-stars .choose-rating,
+#wpjmr-submit-ratings.review-form-stars .stars,
+.comment-form-rating .choose-rating,
+.comment-form-rating .stars {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+    margin-left: 1em
+}
+#wpjmr-submit-ratings.review-form-stars .choose-rating [class^=star],
+#wpjmr-submit-ratings.review-form-stars .stars [class^=star],
+.comment-form-rating .choose-rating [class^=star],
+.comment-form-rating .stars [class^=star] {
+    margin-right: 2px;
+    margin-top: 2px;
+    display: inline-block
+}
+#wpjmr-submit-ratings.review-form-stars .choose-rating [class^=star]:before,
+#wpjmr-submit-ratings.review-form-stars .stars [class^=star]:before,
+.comment-form-rating .choose-rating [class^=star]:before,
+.comment-form-rating .stars [class^=star]:before {
+    font-size: 23px
+}
+#wpjmr-submit-ratings.review-form-stars .choose-rating [class^=star].active::before,
+#wpjmr-submit-ratings.review-form-stars .choose-rating [class^=star].active~.star::before,
+#wpjmr-submit-ratings.review-form-stars .choose-rating [class^=star]:hover::before,
+#wpjmr-submit-ratings.review-form-stars .choose-rating [class^=star]:hover~.star::before,
+#wpjmr-submit-ratings.review-form-stars .stars [class^=star].active::before,
+#wpjmr-submit-ratings.review-form-stars .stars [class^=star].active~.star::before,
+#wpjmr-submit-ratings.review-form-stars .stars [class^=star]:hover::before,
+#wpjmr-submit-ratings.review-form-stars .stars [class^=star]:hover~.star::before,
+.comment-form-rating .choose-rating [class^=star].active::before,
+.comment-form-rating .choose-rating [class^=star].active~.star::before,
+.comment-form-rating .choose-rating [class^=star]:hover::before,
+.comment-form-rating .choose-rating [class^=star]:hover~.star::before,
+.comment-form-rating .stars [class^=star].active::before,
+.comment-form-rating .stars [class^=star].active~.star::before,
+.comment-form-rating .stars [class^=star]:hover::before,
+.comment-form-rating .stars [class^=star]:hover~.star::before {
+    content: "ï’³"
+}
+#wpjmr-submit-ratings.review-form-stars .choose-rating [class^=star],
+.single-job_listing .stars [class^=star] {
+    float: right
+}
+.commentlist #wpjmr-submit-ratings {
+    display: none
+}
+.comment-rating {
+    margin-bottom: 1em
+}
+#wpjmr-list-reviews {
+    float: none;
+    display: inline-block;
+    margin-bottom: 1em
+}
+#wpjmr-list-reviews .dashicons,
+#wpjmr-list-reviews .star-rating-title {
+    line-height: normal
+}
+#wpjmr-list-reviews .star-rating {
+    margin-top: -4px;
+    margin-left: 1em;
+    display: inline-block;
+    vertical-align: middle
+}
+#wpjmr-list-reviews .dashicons {
+    line-height: 12px;
+    width: auto;
+    height: auto;
+    margin: 0
+}
+#wpjmr-list-reviews .dashicons-star-filled:before {
+    content: "ï’³"
+}
+.entry-content .job-manager-reviews td {
+    vertical-align: top
+}
+#job-manager-review-moderate-board .star-rating {
+    max-height: none;
+    clear: both;
+    float: left;
+    margin: 0
+}
+#job-manager-review-moderate-board #wpjmr-list-reviews .star-rating-title {
+    margin-bottom: 0
+}
+#job-manager-review-moderate-board #wpjmr-list-reviews .star-rating {
+    margin-bottom: 10px
+}
+#job-manager-review-moderate-board #wpjmr-list-reviews .star-rating:last-child {
+    margin-bottom: 0
+}
+.review-action svg {
+    width: 10px;
+    height: 10px;
+    fill: #717A8F
+}
+.job-packages {
+    margin: 0 0 -3em;
+    padding: 0;
+    list-style: none
+}
+.page-template-template-plans-pricing .job-packages {
+    margin-bottom: 0
+}
+.job-package {
+    text-align: center;
+    position: relative;
+    border: 3px solid transparent
+}
+.job-package-tag a,
+.job-package-tag a:hover {
+    line-height: 1.5;
+    color: #FFF;
+    font-size: 11px;
+    top: 50%;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    cursor: text;
+    -webkit-transform: translateY(-54%);
+    -moz-transform: translateY(-54%);
+    transform: translateY(-54%)
+}
+.job-package-title {
+    font-size: 20px;
+    line-height: 1;
+    border-bottom: 1px solid #e9edf2;
+    padding-bottom: 1em
+}
+@media (min-width: 768px) {
+    .job-package-title {
+        font-size: 26px
+    }
+}
+.job-package-price {
+    font-size: 30px;
+    line-height: 1;
+    padding: 20px 0
+}
+.job-package-price del {
+    display: none
+}
+.job-package-price ins {
+    background: 0 0
+}
+.job-package-price .subscription-details {
+    font-size: 18px;
+    margin-left: -8px
+}
+@media (min-width: 768px) {
+    .job-package-price {
+        font-size: 32px
+    }
+}
+@media (min-width: 992px) {
+    .job-package-price {
+        font-size: 42px
+    }
+}
+.job-package-includes {
+    border: 1px solid #e9edf2;
+    border-width: 1px 0;
+    padding: 1.5em 0
+}
+.job-package-includes ul {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+.job-package-includes li {
+    line-height: 2.5
+}
+.job-package-includes li:before {
+    font-size: 16px;
+    margin-top: -3px;
+    vertical-align: middle
+}
+.job-package-purchase {
+    margin-top: 2em
+}
+.job-package-purchase a {
+    width: 100%;
+    padding: 12px 20px
+}
+@media (min-width: 992px) {
+    .job-packages.inline .job-package {
+        display: inline-block;
+        width: 31%;
+        margin-right: 3%;
+        vertical-align: middle
+    }
+    .job-packages.inline .job-package:nth-child(3n) {
+        margin-right: 0
+    }
+    .job-packages.inline .job-package:nth-child(4n) {
+        clear: left
+    }
+}
+@media (min-width: 768px) {
+    .job-packages.stacked .job-package {
+        padding: 1.5em
+    }
+    .job-packages.stacked .job-package-header,
+    .job-packages.stacked .job-package-includes,
+    .job-packages.stacked .job-package-purchase {
+        display: inline-block;
+        vertical-align: middle;
+        width: 30%;
+        margin-right: 3%
+    }
+    .job-packages.stacked .job-package-purchase {
+        margin: 0
+    }
+    .job-packages.stacked .job-package-title {
+        border: 0;
+        padding: 0
+    }
+    .job-packages.stacked .job-package-price {
+        font-size: 24px;
+        line-height: 1;
+        margin-top: .5em
+    }
+    .job-packages.stacked .job-package-includes {
+        border: 0;
+        padding: 0
+    }
+}
+.entry-content .job_listing_packages_title,
+.job_listing_packages,
+.job_listing_packages_title {
+    padding: 0;
+    border: 0;
+    background: 0 0
+}
+.entry-content .job_listing_packages_title h2,
+.job_listing_packages_title h2 {
+    display: none
+}
+.job_listing_packages ul.job_packages {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+.job_listing_packages ul.job_packages li.job-package,
+.job_listing_packages ul.job_packages li.user-job-package {
+    text-align: left;
+    background: 0 0;
+    border-radius: 4px;
+    border: 2px solid #eee;
+    padding: 2em;
+    margin-bottom: 1em;
+    box-shadow: none
+}
+.job_listing_packages ul.job_packages li.job-package label,
+.job_listing_packages ul.job_packages li.user-job-package label {
+    font-size: 16px;
+    font-weight: 400
+}
+.job_listing_packages ul.job_packages .package-section {
+    font-weight: 400;
+    margin: 1em 0;
+    border-bottom: 0;
+    padding: 0;
+    line-height: 42px
+}
+.job_listing_packages ul.job_packages .package-section:before {
+    display: inline-block;
+    font-family: Ionicons;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    text-rendering: auto;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\f3f8"
+}
+.job_listing_packages ul.job_packages .package-section:first-of-type:before {
+    content: "\f453"
+}
+.job_listing_packages .user-job-package {
+    margin-bottom: .5em
+}
+.claimed-ribbon {
+    font-size: 0;
+    display: inline-block;
+    height: 38px;
+    position: relative;
+    vertical-align: middle
+}
+@media (min-width: 992px) {
+    .claimed-ribbon {
+        margin: -11px 0 0 10px
+    }
+}
+.claimed-ribbon span:first-child {
+    padding: 3px;
+    background: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    width: 38px;
+    height: 38px;
+    box-shadow: none;
+    text-shadow: none
+}
+.claimed-ribbon span:first-child:before {
+    font-size: 37px;
+    margin: -2px 0 0 0;
+    line-height: 1
+}
+.claimed-ribbon .tooltip {
+    display: none;
+    background: rgba(0, 0, 0, .5);
+    color: #fff;
+    font-size: 14px;
+    margin: 0 0 0 10px;
+    vertical-align: middle;
+    padding: 2px 6px;
+    border-radius: 3px
+}
+.claimed-ribbon:hover .tooltip {
+    display: inline-block
+}
+li.type-job_listing .claimed-ribbon {
+    display: inline-block;
+    margin: 4px 0 0
+}
+li.type-job_listing .claimed-ribbon span {
+    width: 26px;
+    height: 26px;
+    padding: 2px
+}
+li.type-job_listing .claimed-ribbon span:before {
+    font-size: 25px
+}
+li.type-job_listing.style-list .claimed-ribbon {
+    display: inline-block;
+    margin-bottom: -5px
+}
+body p.job-manager-single-alert-link a:before {
+    content: "\f35b";
+    font-size: 20px;
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-top: -2px
+}
+#job-manager-alerts table ul.job-alert-actions {
+    margin: 0;
+    padding: 0;
+    visibility: hidden;
+    font-size: .92em
+}
+#job-manager-alerts table ul.job-alert-actions li {
+    float: none;
+    display: inline;
+    padding: 0;
+    margin: 0 .5em 0 0;
+    font-weight: 400;
+    list-style: none outside
+}
+#job-manager-alerts table ul.job-alert-actions li:after {
+    padding: 0 0 0 .5em;
+    content: "\2023"
+}
+#job-manager-alerts table ul.job-alert-actions li:last-child:after {
+    content: ''
+}
+#job-manager-alerts table ul.job-alert-actions li .job-alerts-action-delete {
+    color: red
+}
+#job-manager-alerts table tr:focus ul.job-alert-actions,
+#job-manager-alerts table tr:hover ul.job-alert-actions {
+    visibility: visible
+}
+.listify_widget_panel_listing_map.widget {
+    padding: 0
+}
+.map-widget-section .job_listing-directions,
+.map-widget-section .job_listing-phone,
+.map-widget-section .job_listing-url {
+    margin-top: 1em
+}
+@media (min-width: 1200px) {
+    .map-widget-sections {
+        width: 100%;
+        display: table
+    }
+}
+.map-widget-section {
+    padding: 2.75em
+}
+.map-widget-section--split {
+    display: block
+}
+.map-widget-section--split:first-child {
+    vertical-align: top
+}
+.map-widget-section--split:last-child {
+    padding-top: 0
+}
+@media (min-width: 1200px) {
+    .map-widget-section--split {
+        display: table-cell;
+        width: 50%;
+        vertical-align: middle
+    }
+    .map-widget-section--split:last-child {
+        padding-top: 2.75em
+    }
+}
+.widget-area .map-widget-sections {
+    display: block;
+    max-width: 100%
+}
+.widget-area .map-widget-section--split {
+    display: block;
+    width: 100%;
+    max-width: 100%
+}
+.widget-area .map-widget-section--split:last-child {
+    padding-top: 0
+}
+#listing-contact-map {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    position: relative;
+    min-height: 235px
+}
+.job_listing-get-directions {
+    display: none;
+    margin-top: 2em
+}
+.job_listing-get-directions .field {
+    position: relative
+}
+.content-shop-wrapper .widget_shopping_cart .added_to_cart,
+.content-shop-wrapper .widget_shopping_cart .button[data-product_id],
+.content-single-job_listing-gallery-wrapper .type-attachment .widget_shopping_cart .comment-count,
+.widget_shopping_cart .button,
+.widget_shopping_cart .content-shop-wrapper .added_to_cart,
+.widget_shopping_cart .content-shop-wrapper .button[data-product_id],
+.widget_shopping_cart .content-single-job_listing-gallery-wrapper .type-attachment .comment-count,
+.widget_shopping_cart .load_more_jobs {
+    padding: 5px 20px
+}
+.content-shop-wrapper .widget_shopping_cart .checkout.added_to_cart,
+.content-single-job_listing-gallery-wrapper .type-attachment .widget_shopping_cart .checkout.comment-count,
+.widget_shopping_cart .checkout.button,
+.widget_shopping_cart .checkout.load_more_jobs,
+.widget_shopping_cart .content-shop-wrapper .checkout.added_to_cart,
+.widget_shopping_cart .content-single-job_listing-gallery-wrapper .type-attachment .checkout.comment-count {
+    float: right
+}
+.woocommerce ul.cart_list li,
+.woocommerce ul.product_list_widget li,
+.woocommerce-page ul.cart_list li,
+.woocommerce-page ul.product_list_widget li {
+    margin-bottom: 1em
+}
+.woocommerce ul.cart_list li img,
+.woocommerce ul.product_list_widget li img,
+.woocommerce-page ul.cart_list li img,
+.woocommerce-page ul.product_list_widget li img {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-right: 15px
+}
+.woocommerce ul.cart_list li>a:first-child,
+.woocommerce ul.product_list_widget li>a:first-child,
+.woocommerce-page ul.cart_list li>a:first-child,
+.woocommerce-page ul.product_list_widget li>a:first-child {
+    display: block
+}
+.woocommerce ul.cart_list li .amount,
+.woocommerce ul.cart_list li .quantity,
+.woocommerce ul.cart_list li .subscription-details,
+.woocommerce ul.product_list_widget li .amount,
+.woocommerce ul.product_list_widget li .quantity,
+.woocommerce ul.product_list_widget li .subscription-details,
+.woocommerce-page ul.cart_list li .amount,
+.woocommerce-page ul.cart_list li .quantity,
+.woocommerce-page ul.cart_list li .subscription-details,
+.woocommerce-page ul.product_list_widget li .amount,
+.woocommerce-page ul.product_list_widget li .quantity,
+.woocommerce-page ul.product_list_widget li .subscription-details {
+    font-size: 12px;
+    color: #b4bcc7;
+    position: relative;
+    width: auto;
+    margin-right: 0;
+    margin-top: -4px;
+    display: inline-block
+}
+.popup #customer_login h2 {
+    margin-top: 0;
+    font-size: 16px;
+    border-bottom: 2px solid #E9EDF2;
+    padding-bottom: 10px;
+    margin-bottom: 1.5em
+}
+.woocommerce form.login input[type=submit],
+.woocommerce form.login label[for=rememberme] {
+    display: inline-block;
+    vertical-align: middle
+}
+.woocommerce form.login label[for=rememberme] {
+    margin-top: 1em;
+    display: block
+}
+@media (min-width: 768px) {
+    .woocommerce form.login label[for=rememberme] {
+        margin-top: 0;
+        margin-left: 20px;
+        display: inline-block
+    }
+}
+.woocommerce form.login .lost_password {
+    margin-bottom: 0
+}
+#customer_login .wc-social-login {
+    margin-top: 2em
+}
+.popup .woocommerce>h2 {
+    display: none
+}
+#customer_login form.login {
+    width: 100%;
+    border-right: 0;
+    padding-right: 0
+}
+#customer_login~.wc-social-login {
+    margin-top: 20px;
+    text-align: left;
+    float: none;
+    width: 100%
+}
+.cart-collaterals .cross-sells .content-shop-wrapper[data-columns]::before,
+.content-shop-wrapper[data-columns]::before {
+    content: '1 .col-xs-12';
+    font-size: 0
+}
+@media (min-width: 768px) {
+    .content-shop-wrapper[data-columns]::before {
+        content: '2 .col-sm-6'
+    }
+}
+@media (min-width: 992px) {
+    .site-main.col-xs-12:not(.col-md-8) .content-shop-wrapper[data-columns]::before {
+        content: '3 .col-md-4'
+    }
+}
+.button[name=apply_coupon],
+.button[name=proceed],
+.button[name=update_cart],
+.content-shop-wrapper [name=apply_coupon].added_to_cart,
+.content-shop-wrapper [name=apply_coupon].button[data-product_id],
+.content-shop-wrapper [name=proceed].added_to_cart,
+.content-shop-wrapper [name=proceed].button[data-product_id],
+.content-shop-wrapper [name=update_cart].added_to_cart,
+.content-shop-wrapper [name=update_cart].button[data-product_id],
+.content-single-job_listing-gallery-wrapper .type-attachment [name=apply_coupon].comment-count,
+.content-single-job_listing-gallery-wrapper .type-attachment [name=proceed].comment-count,
+.content-single-job_listing-gallery-wrapper .type-attachment [name=update_cart].comment-count,
+[name=apply_coupon].load_more_jobs,
+[name=proceed].load_more_jobs,
+[name=update_cart].load_more_jobs {
+    padding: 12px 25px
+}
+.woocommerce .woocommerce-result-count,
+.woocommerce-page .woocommerce-result-count {
+    float: none
+}
+.content-shop-wrapper .type-product {
+    padding: 0;
+    position: relative;
+    cursor: pointer
+}
+.type-attachment .attachment-overlay,
+.type-product .product-overlay,
+.type-product .product-permalink {
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10
+}
+.content-shop-wrapper .add_to_cart_button,
+.content-shop-wrapper .added_to_cart.wc-forward,
+.content-shop-wrapper .grouped,
+.content-shop-wrapper .product_type_simple,
+.type-attachment .attachment-overlay,
+.type-product .product-overlay {
+    color: #fff;
+    text-shadow: rgba(0, 0, 0, .8) 0 1px 0;
+    border-radius: 4px;
+    opacity: 0;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    transition: all .2s
+}
+.content-shop-wrapper .add_to_cart_button .title-price,
+.content-shop-wrapper .added_to_cart.wc-forward .title-price,
+.content-shop-wrapper .grouped .title-price,
+.content-shop-wrapper .product_type_simple .title-price,
+.type-attachment .attachment-overlay .title-price,
+.type-product .product-overlay .title-price {
+    color: #fff
+}
+.content-shop-wrapper .type-product:hover .product-overlay,
+.content-single-job_listing-gallery-wrapper .type-attachment:hover .attachment-overlay {
+    opacity: 1;
+    background: rgba(0, 0, 0, .45)
+}
+.content-shop-wrapper .type-product:hover .added_to_cart,
+.content-shop-wrapper .type-product:hover .content-single-job_listing-gallery-wrapper .type-attachment [data-product_id].comment-count,
+.content-shop-wrapper .type-product:hover [data-product_id].added_to_cart,
+.content-shop-wrapper .type-product:hover [data-product_id].button,
+.content-shop-wrapper .type-product:hover [data-product_id].load_more_jobs,
+.content-single-job_listing-gallery-wrapper .type-attachment .content-shop-wrapper .type-product:hover [data-product_id].comment-count,
+.content-single-job_listing-gallery-wrapper .type-attachment:hover .comment-count {
+    opacity: 1
+}
+.job-package-tag,
+.type-product .onsale {
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-shadow: none;
+    text-align: center;
+    line-height: 75px;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    top: -40px;
+    right: 8px;
+    display: inline-block;
+    z-index: 20
+}
+.type-product .product-image {
+    position: relative;
+    width: 100%;
+    display: block;
+    border-radius: 4px;
+    overflow: hidden
+}
+.type-product .product-image img {
+    min-width: 100%;
+    height: auto
+}
+.content-shop-wrapper .type-product .title-price,
+.content-single-job_listing-gallery-wrapper .type-attachment .attachment-view {
+    text-align: center;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    transform: translateY(-50%)
+}
+.content-shop-wrapper .type-product .title-price h3,
+.content-shop-wrapper .type-product .title-price h3 a,
+.content-shop-wrapper .type-product .title-price h3 a:hover {
+    color: #fff;
+    font-size: 16px;
+    margin: 0;
+    border: 0
+}
+.content-shop-wrapper .type-product .price {
+    display: block;
+    margin-top: 3px
+}
+.woocommerce .content-shop-wrapper .price .amount,
+.woocommerce .price ins .amount {
+    color: #fff
+}
+.content-shop-wrapper .type-product .price del {
+    color: rgba(255, 255, 255, .5);
+    text-shadow: none
+}
+.type-product .price ins {
+    color: #fff;
+    text-shadow: none;
+    padding: 2px 4px;
+    border-radius: 2px
+}
+.content-shop-wrapper .added_to_cart,
+.content-shop-wrapper .content-single-job_listing-gallery-wrapper .type-attachment [data-product_id].comment-count,
+.content-shop-wrapper [data-product_id].added_to_cart,
+.content-shop-wrapper [data-product_id].button,
+.content-shop-wrapper [data-product_id].load_more_jobs,
+.content-single-job_listing-gallery-wrapper .type-attachment .comment-count,
+.content-single-job_listing-gallery-wrapper .type-attachment .content-shop-wrapper [data-product_id].comment-count {
+    text-shadow: rgba(0, 0, 0, .8) 0 1px 0!important;
+    padding: 0;
+    box-shadow: none;
+    background: 0 0;
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    z-index: 30;
+    opacity: 0;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    transform: translateX(-50%)
+}
+.content-shop-wrapper .added_to_cart:before,
+.content-shop-wrapper .content-single-job_listing-gallery-wrapper .type-attachment [data-product_id].comment-count:before,
+.content-shop-wrapper [data-product_id].added_to_cart:before,
+.content-shop-wrapper [data-product_id].button:before,
+.content-shop-wrapper [data-product_id].load_more_jobs:before,
+.content-single-job_listing-gallery-wrapper .type-attachment .comment-count a:before,
+.content-single-job_listing-gallery-wrapper .type-attachment .content-shop-wrapper [data-product_id].comment-count:before {
+    display: inline-block;
+    font-family: Ionicons;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    text-rendering: auto;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: '\f110';
+    font-size: 24px;
+    margin: 0 8px 0 0;
+    vertical-align: top
+}
+.content-shop-wrapper .added_to_cart:before {
+    margin-top: 2px;
+    content: '\f3f8'
+}
+.content-shop-wrapper .add_to_cart_button.added.added_to_cart,
+.content-shop-wrapper .add_to_cart_button.added.load_more_jobs,
+.content-shop-wrapper .button.add_to_cart_button.added,
+.content-shop-wrapper .content-single-job_listing-gallery-wrapper .type-attachment .add_to_cart_button.added.comment-count,
+.content-single-job_listing-gallery-wrapper .type-attachment .content-shop-wrapper .add_to_cart_button.added.comment-count,
+.woocommerce-filters {
+    display: none
+}
+.woocommerce-filters .widget {
+    padding: 0;
+    background: 0 0;
+    box-shadow: none
+}
+.woocommerce-filters .widget:last-child {
+    margin-bottom: 0
+}
+.woocommerce-filters.active {
+    display: block
+}
+@media (min-width: 992px) {
+    .woocommerce-filters {
+        display: block
+    }
+}
+.single-product .type-product {
+    position: relative
+}
+.woocommerce div.product div.images {
+    margin-bottom: 2em
+}
+.product_title.entry-title,
+.single-product .price {
+    margin: 0;
+    font-size: 19px
+}
+.single-product div[itemprop=description] {
+    margin: 1.25em 0 1.5em
+}
+.woocommerce-tabs {
+    margin-top: 3em;
+    clear: both
+}
+.woocommerce-tabs .tabs {
+    margin: 0 0 2.5em;
+    padding: 0
+}
+.woocommerce #content div.product .woocommerce-tabs ul.tabs li {
+    display: block;
+    margin-bottom: 1.5em
+}
+.woocommerce #content div.product .woocommerce-tabs ul.tabs li:last-child {
+    margin-bottom: 0
+}
+@media (min-width: 768px) {
+    .woocommerce #content div.product .woocommerce-tabs ul.tabs li {
+        margin-right: 1.5em;
+        margin-bottom: 0;
+        display: inline-block
+    }
+}
+.comment-form-rating .select.null-wrapper,
+.woocommerce-tabs .panel h2 {
+    display: none
+}
+#tab-reviews .commentlist {
+    margin: 3em 0 0
+}
+.woocommerce #content div.product #reviews .comment img,
+.woocommerce div.product #reviews .comment img,
+.woocommerce-page #content div.product #reviews .comment img,
+.woocommerce-page div.product #reviews .comment img {
+    float: none
+}
+#review_form .comment-form-rating {
+    overflow: hidden
+}
+#review_form .comment-form-rating label {
+    float: left
+}
+#review_form .stars {
+    float: left;
+    margin: 3px 0 0
+}
+.comment-form-rating .stars span a {
+    float: none;
+    font-size: 0!important
+}
+.woocommerce .content-shop-wrapper .star-rating {
+    margin: 5px 0;
+    float: none
+}
+.woocommerce .content-shop-wrapper .star-rating:before {
+    color: #fff;
+    margin-right: 5px
+}
+.woocommerce-tabs .woocommerce-noreviews {
+    margin: 0 0 2em!important
+}
+.type-product .thumbnails a,
+.woocommerce-main-image {
+    padding: 0;
+    display: inline-block
+}
+.type-product .thumbnails img,
+.woocommerce-main-image,
+.woocommerce-main-image img {
+    min-width: 100%;
+    max-width: 100%;
+    border-radius: 4px
+}
+.woocommerce .summary .cart {
+    margin: 1.5em 0
+}
+.woocommerce .quantity {
+    position: relative;
+    width: 100px;
+    margin-right: 1em;
+    display: inline-block
+}
+.woocommerce .quantity input[type=number] {
+    background: #fff;
+    width: 100%
+}
+.woocommerce .quantity input[type=button] {
+    position: absolute;
+    right: 2px;
+    padding: 0;
+    width: 30px;
+    height: 20px;
+    line-height: 20px;
+    box-shadow: none;
+    background: 0 0;
+    border-radius: 0;
+    border-left-style: solid;
+    border-left-width: 2px
+}
+.woocommerce .quantity input[type=button].minus {
+    bottom: 2px;
+    border-bottom-right-radius: 4px;
+    border-top-style: solid;
+    border-top-width: 1px
+}
+.woocommerce .quantity input[type=button].plus {
+    top: 2px;
+    border-top-right-radius: 4px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px
+}
+.related.products h2,
+.upsells.products h2 {
+    margin: 2em 0;
+    font-size: 16px
+}
+table.variations {
+    border: 0
+}
+table.variations td {
+    vertical-align: top;
+    padding: 0;
+    border: 0;
+    display: block
+}
+table.variations td .select,
+table.variations td select {
+    width: 100%
+}
+table.variations td.value {
+    padding-bottom: 10px
+}
+table.variations .reset_variations {
+    margin-top: 10px;
+    clear: both;
+    display: block
+}
+.ui-slider {
+    position: relative
+}
+.ui-slider .ui-slider-handle {
+    position: absolute;
+    z-index: 2;
+    cursor: default;
+    width: 18px;
+    height: 18px;
+    background: #fff;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 2px;
+    box-shadow: none
+}
+.ui-slider,
+.ui-slider .ui-slider-range {
+    background: #e9edf2;
+    border-radius: 20px;
+    border: 0;
+    height: 8px;
+    box-shadow: none
+}
+.ui-slider .ui-slider-range {
+    position: absolute;
+    z-index: 1
+}
+.ui-slider-horizontal .ui-slider-handle {
+    top: -5px;
+    margin-left: 0
+}
+.ui-slider-horizontal .ui-slider-range {
+    top: 0;
+    height: 100%
+}
+.ui-slider-horizontal .ui-slider-range-min {
+    left: 0
+}
+.ui-slider-horizontal .ui-slider-range-max {
+    right: 0
+}
+.ui-slider-horizontal .ui-slider-handle:last-child {
+    margin-left: -18px
+}
+.ui-slider-horizontal .ui-slider-handle:only-child {
+    margin-left: -18px;
+    margin-right: -18px
+}
+.price_slider_wrapper .price_slider_amount {
+    margin-top: 1.5em
+}
+.content-shop-wrapper .price_slider_wrapper .price_slider_amount .added_to_cart,
+.content-single-job_listing-gallery-wrapper .type-attachment .price_slider_wrapper .price_slider_amount .comment-count,
+.price_slider_wrapper .price_slider_amount .button,
+.price_slider_wrapper .price_slider_amount .content-shop-wrapper .added_to_cart,
+.price_slider_wrapper .price_slider_amount .content-single-job_listing-gallery-wrapper .type-attachment .comment-count,
+.price_slider_wrapper .price_slider_amount .load_more_jobs,
+.price_slider_wrapper .price_slider_amount .price_label {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px
+}
+.widget_layered_nav li a:hover {
+    cursor: pointer
+}
+.widget_layered_nav_filters a:before {
+    color: #b4bcc7;
+    content: '\f12a';
+    margin-right: 6px
+}
+.woocommerce-error {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+.job-manager-error,
+.job-manager-message,
+.woocommerce-error li,
+.woocommerce-info,
+.woocommerce-message {
+    margin: 0 0 2em;
+    padding: 1em;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, .03) 0 2px 0
+}
+.woocommerce-error li {
+    border-color: #ed3b3b
+}
+.content-shop-wrapper .job-manager-error .added_to_cart,
+.content-shop-wrapper .job-manager-error .button[data-product_id],
+.content-shop-wrapper .job-manager-message .added_to_cart,
+.content-shop-wrapper .job-manager-message .button[data-product_id],
+.content-shop-wrapper .woocommerce-error .added_to_cart,
+.content-shop-wrapper .woocommerce-error .button[data-product_id],
+.content-shop-wrapper .woocommerce-message .added_to_cart,
+.content-shop-wrapper .woocommerce-message .button[data-product_id],
+.content-shop-wrapper .woocommerce_message .added_to_cart,
+.content-shop-wrapper .woocommerce_message .button[data-product_id],
+.content-single-job_listing-gallery-wrapper .type-attachment .job-manager-error .comment-count,
+.content-single-job_listing-gallery-wrapper .type-attachment .job-manager-message .comment-count,
+.content-single-job_listing-gallery-wrapper .type-attachment .woocommerce-error .comment-count,
+.content-single-job_listing-gallery-wrapper .type-attachment .woocommerce-message .comment-count,
+.content-single-job_listing-gallery-wrapper .type-attachment .woocommerce_message .comment-count,
+.job-manager-error .button,
+.job-manager-error .content-shop-wrapper .added_to_cart,
+.job-manager-error .content-shop-wrapper .button[data-product_id],
+.job-manager-error .content-single-job_listing-gallery-wrapper .type-attachment .comment-count,
+.job-manager-error .load_more_jobs,
+.job-manager-message .button,
+.job-manager-message .content-shop-wrapper .added_to_cart,
+.job-manager-message .content-shop-wrapper .button[data-product_id],
+.job-manager-message .content-single-job_listing-gallery-wrapper .type-attachment .comment-count,
+.job-manager-message .load_more_jobs,
+.woocommerce-error .button,
+.woocommerce-error .content-shop-wrapper .added_to_cart,
+.woocommerce-error .content-shop-wrapper .button[data-product_id],
+.woocommerce-error .content-single-job_listing-gallery-wrapper .type-attachment .comment-count,
+.woocommerce-error .load_more_jobs,
+.woocommerce-message .button,
+.woocommerce-message .content-shop-wrapper .added_to_cart,
+.woocommerce-message .content-shop-wrapper .button[data-product_id],
+.woocommerce-message .content-single-job_listing-gallery-wrapper .type-attachment .comment-count,
+.woocommerce-message .load_more_jobs,
+.woocommerce_message .button,
+.woocommerce_message .content-shop-wrapper .added_to_cart,
+.woocommerce_message .content-shop-wrapper .button[data-product_id],
+.woocommerce_message .content-single-job_listing-gallery-wrapper .type-attachment .comment-count,
+.woocommerce_message .load_more_jobs {
+    font-size: 12px;
+    padding: 8px 12px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: .5em
+}
+.payment_methods {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+.payment_methods li {
+    padding: 1.5em 2em;
+    margin-bottom: 1em;
+    background: #e9edf2;
+    border-radius: 4px
+}
+.payment_methods li .payment_box {
+    background: #fff;
+    border-style: solid;
+    border-width: 2px;
+    margin: 1.5em -2em -1.5em -2em;
+    padding: 2em;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px
+}
+.woocommerce-pagination {
+    margin-bottom: 3em;
+    text-align: center
+}
+.woocommerce-pagination li {
+    margin-bottom: 1em
+}
+.woocommerce-pagination a,
+.woocommerce-pagination span {
+    display: block
+}
+@media (min-width: 768px) {
+    .woocommerce-pagination {
+        margin-bottom: 5em
+    }
+}
+label[for=payment_method_paypal] img {
+    display: block;
+    width: 160px
+}
+.woocommerce #payment .terms,
+.woocommerce-page #payment .terms {
+    text-align: left;
+    margin-top: 1.3em
+}
+body.woocommerce-social-login .mfp-content .woocommerce {
+    overflow: hidden
+}
+@media (min-width: 992px) {
+    body.woocommerce-social-login .mfp-content .woocommerce form.login {
+        float: left;
+        width: 50%;
+        border-right: 1px solid #ddd;
+        padding-right: 4%
+    }
+    body.woocommerce-social-login .mfp-content .woocommerce .wc-social-login {
+        margin-top: 50px;
+        text-align: center;
+        float: right;
+        width: 48%;
+        padding: 0 4em
+    }
+    body.woocommerce-social-login .mfp-content .woocommerce #customer_login+.wc-social-login {
+        padding: 0
+    }
+}
+.wc-social-login .button-social-login,
+.wc-social-login a.button-social-login {
+    font-size: 0;
+    text-shadow: none;
+    line-height: 50px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 0;
+    margin: 0 10px 10px 0;
+    padding: 0;
+    box-shadow: none;
+    display: inline-block
+}
+.wc-social-login .button-social-login .si,
+.wc-social-login a.button-social-login .si {
+    font-size: 22px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    border: 0;
+    right: 0;
+    width: 100%;
+    display: block;
+    padding: 0
+}
+.wc-social-login .button-social-login .si.si-facebook:before,
+.wc-social-login a.button-social-login .si.si-facebook:before {
+    margin-left: -5px
+}
+.wc-social-login .button-social-login .si.si-twitter:before,
+.wc-social-login a.button-social-login .si.si-twitter:before {
+    margin-right: -1px
+}
+.woocommerce-account .woocommerce fieldset {
+    padding: 0;
+    border: 0
+}
+.woocommerce-account .woocommerce legend {
+    display: block;
+    width: 100%
+}
+.shop_table td {
+    vertical-align: top
+}
+.shop_table .product-thumbnail {
+    width: 70px
+}
+.shop_table .product-thumbnail img {
+    width: 50px;
+    height: 50px
+}
+.shop_table .variation,
+.shop_table .variation dd:last-child,
+.shop_table .variation-BookingDate,
+.shop_table .variation-BookingDate dd:last-child {
+    margin-bottom: 0
+}
+.woocommerce #content table.cart td.actions .input-text,
+.woocommerce table.cart td.actions .input-text,
+.woocommerce-page #content table.cart td.actions .input-text,
+.woocommerce-page table.cart td.actions .input-text {
+    width: 100%
+}
+@media (min-width: 768px) {
+    .woocommerce #content table.cart td.actions .input-text,
+    .woocommerce table.cart td.actions .input-text,
+    .woocommerce-page #content table.cart td.actions .input-text,
+    .woocommerce-page table.cart td.actions .input-text {
+        width: 120px
+    }
+}
+.button[name=apply_coupon],
+.content-shop-wrapper [name=apply_coupon].added_to_cart,
+.content-shop-wrapper [name=apply_coupon].button[data-product_id],
+.content-single-job_listing-gallery-wrapper .type-attachment [name=apply_coupon].comment-count,
+[name=apply_coupon].load_more_jobs {
+    vertical-align: top
+}
+.wc-proceed-to-checkout {
+    text-align: right
+}
+.content-shop-wrapper .woocommerce #content table.cart td.actions .added_to_cart,
+.content-shop-wrapper .woocommerce #content table.cart td.actions .alt.added_to_cart,
+.content-shop-wrapper .woocommerce #content table.cart td.actions .input-text+.added_to_cart,
+.content-shop-wrapper .woocommerce table.cart td.actions .added_to_cart,
+.content-shop-wrapper .woocommerce table.cart td.actions .alt.added_to_cart,
+.content-shop-wrapper .woocommerce table.cart td.actions .input-text+.added_to_cart,
+.content-shop-wrapper .woocommerce-page #content table.cart td.actions .added_to_cart,
+.content-shop-wrapper .woocommerce-page #content table.cart td.actions .alt.added_to_cart,
+.content-shop-wrapper .woocommerce-page #content table.cart td.actions .input-text+.added_to_cart,
+.content-shop-wrapper .woocommerce-page table.cart td.actions .alt.added_to_cart,
+.content-shop-wrapper .woocommerce-page table.cart td.actions .input-text+.added_to_cart,
+.content-single-job_listing-gallery-wrapper .type-attachment .woocommerce #content table.cart td.actions .alt.comment-count,
+.content-single-job_listing-gallery-wrapper .type-attachment .woocommerce #content table.cart td.actions .comment-count,
+.content-single-job_listing-gallery-wrapper .type-attachment .woocommerce #content table.cart td.actions .input-text+.comment-count,
+.content-single-job_listing-gallery-wrapper .type-attachment .woocommerce table.cart td.actions .alt.comment-count,
+.content-single-job_listing-gallery-wrapper .type-attachment .woocommerce table.cart td.actions .comment-count,
+.content-single-job_listing-gallery-wrapper .type-attachment .woocommerce table.cart td.actions .input-text+.comment-count,
+.content-single-job_listing-gallery-wrapper .type-attachment .woocommerce-page #content table.cart td.actions .alt.comment-count,
+.content-single-job_listing-gallery-wrapper .type-attachment .woocommerce-page #content table.cart td.actions .comment-count,
+.content-single-job_listing-gallery-wrapper .type-attachment .woocommerce-page #content table.cart td.actions .input-text+.comment-count,
+.content-single-job_listing-gallery-wrapper .type-attachment .woocommerce-page table.cart td.actions .alt.comment-count,
+.content-single-job_listing-gallery-wrapper .type-attachment .woocommerce-page table.cart td.actions .input-text+.comment-count,
+.woocommerce #content table.cart td.actions .alt.load_more_jobs,
+.woocommerce #content table.cart td.actions .button,
+.woocommerce #content table.cart td.actions .button.alt,
+.woocommerce #content table.cart td.actions .content-shop-wrapper .added_to_cart,
+.woocommerce #content table.cart td.actions .content-shop-wrapper .alt.added_to_cart,
+.woocommerce #content table.cart td.actions .content-shop-wrapper .input-text+.added_to_cart,
+.woocommerce #content table.cart td.actions .content-shop-wrapper .input-text+.button[data-product_id],
+.woocommerce #content table.cart td.actions .content-single-job_listing-gallery-wrapper .type-attachment .alt.comment-count,
+.woocommerce #content table.cart td.actions .content-single-job_listing-gallery-wrapper .type-attachment .comment-count,
+.woocommerce #content table.cart td.actions .content-single-job_listing-gallery-wrapper .type-attachment .input-text+.comment-count,
+.woocommerce #content table.cart td.actions .input-text,
+.woocommerce #content table.cart td.actions .input-text+.button,
+.woocommerce #content table.cart td.actions .input-text+.load_more_jobs,
+.woocommerce #content table.cart td.actions .load_more_jobs,
+.woocommerce #content table.cart td.actions .widget_shopping_cart .input-text+.button,
+.woocommerce #content table.cart td.actions input,
+.woocommerce table.cart td.actions .alt.load_more_jobs,
+.woocommerce table.cart td.actions .button,
+.woocommerce table.cart td.actions .button.alt,
+.woocommerce table.cart td.actions .content-shop-wrapper .added_to_cart,
+.woocommerce table.cart td.actions .content-shop-wrapper .alt.added_to_cart,
+.woocommerce table.cart td.actions .content-shop-wrapper .input-text+.added_to_cart,
+.woocommerce table.cart td.actions .content-shop-wrapper .input-text+.button[data-product_id],
+.woocommerce table.cart td.actions .content-single-job_listing-gallery-wrapper .type-attachment .alt.comment-count,
+.woocommerce table.cart td.actions .content-single-job_listing-gallery-wrapper .type-attachment .comment-count,
+.woocommerce table.cart td.actions .content-single-job_listing-gallery-wrapper .type-attachment .input-text+.comment-count,
+.woocommerce table.cart td.actions .input-text,
+.woocommerce table.cart td.actions .input-text+.button,
+.woocommerce table.cart td.actions .input-text+.load_more_jobs,
+.woocommerce table.cart td.actions .load_more_jobs,
+.woocommerce table.cart td.actions .widget_shopping_cart .input-text+.button,
+.woocommerce table.cart td.actions input,
+.woocommerce-page #content table.cart td.actions .alt.load_more_jobs,
+.woocommerce-page #content table.cart td.actions .button,
+.woocommerce-page #content table.cart td.actions .button.alt,
+.woocommerce-page #content table.cart td.actions .content-shop-wrapper .added_to_cart,
+.woocommerce-page #content table.cart td.actions .content-shop-wrapper .alt.added_to_cart,
+.woocommerce-page #content table.cart td.actions .content-shop-wrapper .input-text+.added_to_cart,
+.woocommerce-page #content table.cart td.actions .content-shop-wrapper .input-text+.button[data-product_id],
+.woocommerce-page #content table.cart td.actions .content-single-job_listing-gallery-wrapper .type-attachment .alt.comment-count,
+.woocommerce-page #content table.cart td.actions .content-single-job_listing-gallery-wrapper .type-attachment .comment-count,
+.woocommerce-page #content table.cart td.actions .content-single-job_listing-gallery-wrapper .type-attachment .input-text+.comment-count,
+.woocommerce-page #content table.cart td.actions .input-text,
+.woocommerce-page #content table.cart td.actions .input-text+.button,
+.woocommerce-page #content table.cart td.actions .input-text+.load_more_jobs,
+.woocommerce-page #content table.cart td.actions .load_more_jobs,
+.woocommerce-page #content table.cart td.actions .widget_shopping_cart .input-text+.button,
+.woocommerce-page #content table.cart td.actions input,
+.woocommerce-page table.cart td.actions .alt.load_more_jobs,
+.woocommerce-page table.cart td.actions .button.alt,
+.woocommerce-page table.cart td.actions .content-shop-wrapper .alt.added_to_cart,
+.woocommerce-page table.cart td.actions .content-shop-wrapper .input-text+.added_to_cart,
+.woocommerce-page table.cart td.actions .content-shop-wrapper .input-text+.button[data-product_id],
+.woocommerce-page table.cart td.actions .content-single-job_listing-gallery-wrapper .type-attachment .alt.comment-count,
+.woocommerce-page table.cart td.actions .content-single-job_listing-gallery-wrapper .type-attachment .input-text+.comment-count,
+.woocommerce-page table.cart td.actions .input-text+.button,
+.woocommerce-page table.cart td.actions .input-text+.load_more_jobs,
+.woocommerce-page table.cart td.actions .widget_shopping_cart .input-text+.button {
+    width: 100%;
+    margin-top: .5em
+}
+@media (min-width: 768px) {
+    .content-shop-wrapper .woocommerce #content table.cart td.actions .added_to_cart,
+    .content-shop-wrapper .woocommerce #content table.cart td.actions .alt.added_to_cart,
+    .content-shop-wrapper .woocommerce #content table.cart td.actions .input-text+.added_to_cart,
+    .content-shop-wrapper .woocommerce table.cart td.actions .added_to_cart,
+    .content-shop-wrapper .woocommerce table.cart td.actions .alt.added_to_cart,
+    .content-shop-wrapper .woocommerce table.cart td.actions .input-text+.added_to_cart,
+    .content-shop-wrapper .woocommerce-page #content table.cart td.actions .added_to_cart,
+    .content-shop-wrapper .woocommerce-page #content table.cart td.actions .alt.added_to_cart,
+    .content-shop-wrapper .woocommerce-page #content table.cart td.actions .input-text+.added_to_cart,
+    .content-shop-wrapper .woocommerce-page table.cart td.actions .alt.added_to_cart,
+    .content-shop-wrapper .woocommerce-page table.cart td.actions .input-text+.added_to_cart,
+    .content-single-job_listing-gallery-wrapper .type-attachment .woocommerce #content table.cart td.actions .alt.comment-count,
+    .content-single-job_listing-gallery-wrapper .type-attachment .woocommerce #content table.cart td.actions .comment-count,
+    .content-single-job_listing-gallery-wrapper .type-attachment .woocommerce #content table.cart td.actions .input-text+.comment-count,
+    .content-single-job_listing-gallery-wrapper .type-attachment .woocommerce table.cart td.actions .alt.comment-count,
+    .content-single-job_listing-gallery-wrapper .type-attachment .woocommerce table.cart td.actions .comment-count,
+    .content-single-job_listing-gallery-wrapper .type-attachment .woocommerce table.cart td.actions .input-text+.comment-count,
+    .content-single-job_listing-gallery-wrapper .type-attachment .woocommerce-page #content table.cart td.actions .alt.comment-count,
+    .content-single-job_listing-gallery-wrapper .type-attachment .woocommerce-page #content table.cart td.actions .comment-count,
+    .content-single-job_listing-gallery-wrapper .type-attachment .woocommerce-page #content table.cart td.actions .input-text+.comment-count,
+    .content-single-job_listing-gallery-wrapper .type-attachment .woocommerce-page table.cart td.actions .alt.comment-count,
+    .content-single-job_listing-gallery-wrapper .type-attachment .woocommerce-page table.cart td.actions .input-text+.comment-count,
+    .woocommerce #content table.cart td.actions .alt.load_more_jobs,
+    .woocommerce #content table.cart td.actions .button,
+    .woocommerce #content table.cart td.actions .button.alt,
+    .woocommerce #content table.cart td.actions .content-shop-wrapper .added_to_cart,
+    .woocommerce #content table.cart td.actions .content-shop-wrapper .alt.added_to_cart,
+    .woocommerce #content table.cart td.actions .content-shop-wrapper .input-text+.added_to_cart,
+    .woocommerce #content table.cart td.actions .content-shop-wrapper .input-text+.button[data-product_id],
+    .woocommerce #content table.cart td.actions .content-single-job_listing-gallery-wrapper .type-attachment .alt.comment-count,
+    .woocommerce #content table.cart td.actions .content-single-job_listing-gallery-wrapper .type-attachment .comment-count,
+    .woocommerce #content table.cart td.actions .content-single-job_listing-gallery-wrapper .type-attachment .input-text+.comment-count,
+    .woocommerce #content table.cart td.actions .input-text,
+    .woocommerce #content table.cart td.actions .input-text+.button,
+    .woocommerce #content table.cart td.actions .input-text+.load_more_jobs,
+    .woocommerce #content table.cart td.actions .load_more_jobs,
+    .woocommerce #content table.cart td.actions .widget_shopping_cart .input-text+.button,
+    .woocommerce #content table.cart td.actions input,
+    .woocommerce table.cart td.actions .alt.load_more_jobs,
+    .woocommerce table.cart td.actions .button,
+    .woocommerce table.cart td.actions .button.alt,
+    .woocommerce table.cart td.actions .content-shop-wrapper .added_to_cart,
+    .woocommerce table.cart td.actions .content-shop-wrapper .alt.added_to_cart,
+    .woocommerce table.cart td.actions .content-shop-wrapper .input-text+.added_to_cart,
+    .woocommerce table.cart td.actions .content-shop-wrapper .input-text+.button[data-product_id],
+    .woocommerce table.cart td.actions .content-single-job_listing-gallery-wrapper .type-attachment .alt.comment-count,
+    .woocommerce table.cart td.actions .content-single-job_listing-gallery-wrapper .type-attachment .comment-count,
+    .woocommerce table.cart td.actions .content-single-job_listing-gallery-wrapper .type-attachment .input-text+.comment-count,
+    .woocommerce table.cart td.actions .input-text,
+    .woocommerce table.cart td.actions .input-text+.button,
+    .woocommerce table.cart td.actions .input-text+.load_more_jobs,
+    .woocommerce table.cart td.actions .load_more_jobs,
+    .woocommerce table.cart td.actions .widget_shopping_cart .input-text+.button,
+    .woocommerce table.cart td.actions input,
+    .woocommerce-page #content table.cart td.actions .alt.load_more_jobs,
+    .woocommerce-page #content table.cart td.actions .button,
+    .woocommerce-page #content table.cart td.actions .button.alt,
+    .woocommerce-page #content table.cart td.actions .content-shop-wrapper .added_to_cart,
+    .woocommerce-page #content table.cart td.actions .content-shop-wrapper .alt.added_to_cart,
+    .woocommerce-page #content table.cart td.actions .content-shop-wrapper .input-text+.added_to_cart,
+    .woocommerce-page #content table.cart td.actions .content-shop-wrapper .input-text+.button[data-product_id],
+    .woocommerce-page #content table.cart td.actions .content-single-job_listing-gallery-wrapper .type-attachment .alt.comment-count,
+    .woocommerce-page #content table.cart td.actions .content-single-job_listing-gallery-wrapper .type-attachment .comment-count,
+    .woocommerce-page #content table.cart td.actions .content-single-job_listing-gallery-wrapper .type-attachment .input-text+.comment-count,
+    .woocommerce-page #content table.cart td.actions .input-text,
+    .woocommerce-page #content table.cart td.actions .input-text+.button,
+    .woocommerce-page #content table.cart td.actions .input-text+.load_more_jobs,
+    .woocommerce-page #content table.cart td.actions .load_more_jobs,
+    .woocommerce-page #content table.cart td.actions .widget_shopping_cart .input-text+.button,
+    .woocommerce-page #content table.cart td.actions input,
+    .woocommerce-page table.cart td.actions .alt.load_more_jobs,
+    .woocommerce-page table.cart td.actions .button.alt,
+    .woocommerce-page table.cart td.actions .content-shop-wrapper .alt.added_to_cart,
+    .woocommerce-page table.cart td.actions .content-shop-wrapper .input-text+.added_to_cart,
+    .woocommerce-page table.cart td.actions .content-shop-wrapper .input-text+.button[data-product_id],
+    .woocommerce-page table.cart td.actions .content-single-job_listing-gallery-wrapper .type-attachment .alt.comment-count,
+    .woocommerce-page table.cart td.actions .content-single-job_listing-gallery-wrapper .type-attachment .input-text+.comment-count,
+    .woocommerce-page table.cart td.actions .input-text+.button,
+    .woocommerce-page table.cart td.actions .input-text+.load_more_jobs,
+    .woocommerce-page table.cart td.actions .widget_shopping_cart .input-text+.button {
+        width: inherit;
+        margin-top: 0
+    }
+}
+.listify_widget_panel_listing_bookings form:not(:last-child) {
+    margin-bottom: 1.5em
+}
+.listify_widget_panel_listing_bookings .booking-form-title {
+    font-size: 16px
+}
+.woocommerce #content div.product.product-type-grouped .images,
+.woocommerce #content div.product.product-type-grouped .summary {
+    width: 100%;
+    float: none
+}
+.woocommerce #content div.product.product-type-grouped .images img {
+    min-width: 100%
+}
+.woocommerce #content div.product.product-type-grouped .summary .group_table td {
+    vertical-align: middle
+}
+.woocommerce #content div.product.product-type-grouped .summary .group_table td.label {
+    width: 40%
+}
+.woocommerce #content div.product.product-type-grouped .summary .group_table .subscription-details {
+    font-size: 12px
+}
+.job_filters.facets .facetwp-filter {
+    margin-bottom: 2em
+}
+.job_filters.facets .facetwp-filter:last-child,
+div.facetwp-facet {
+    margin-bottom: 0
+}
+.facetwp-facet input[type=text],
+.facetwp-facet select {
+    width: 100%
+}
+.facetwp-counts {
+    display: inline
+}
+.facetwp-facet .facetwp-depth {
+    padding-left: 10px;
+    border-left: 1px solid #EEE;
+    margin: 5px 0 5px 2px
+}
+.facetwp-facet.facetwp-type-checkboxes,
+.facetwp-facet.facetwp-type-hierarchy {
+    max-height: none
+}
+.facetwp-facet .facetwp-checkbox,
+.facetwp-facet .facetwp-checkbox.checked,
+.widget_layered_nav li a,
+.widget_layered_nav li.chosen a {
+    background: 0 0;
+    margin-bottom: 0;
+    padding: 0;
+    position: relative
+}
+.facetwp-facet .facetwp-checkbox:before,
+.widget_layered_nav li a:before {
+    content: ' ';
+    margin-top: -3px;
+    margin-right: 8px
+}
+.facetwp-facet .facetwp-checkbox.checked:after,
+.widget_layered_nav li.chosen a:after {
+    position: absolute;
+    left: 6px;
+    top: 3px;
+    margin-top: 3px;
+    margin-right: 1px
+}
+.widget_layered_nav li.chosen a:after {
+    top: 0
+}
+@media (min-width: 992px) {
+    .facetwp-facet .facetwp-checkbox.checked:after {
+        top: 5px
+    }
+    .widget_layered_nav li.chosen a:after {
+        top: 0
+    }
+}
+.facetwp-facet .facetwp-link.checked,
+.widget_layered_nav li.chosen a {
+    font-weight: 400
+}
+.facetwp-facet input[type=button].facetwp-reset,
+.facetwp-facet input[type=button].facetwp-reset:focus,
+.facetwp-facet input[type=button].facetwp-reset:hover,
+.facetwp-facet input[type=button].facetwp-slider-reset,
+.facetwp-facet input[type=button].facetwp-slider-reset:focus,
+.facetwp-facet input[type=button].facetwp-slider-reset:hover {
+    color: #555;
+    background: 0 0;
+    padding-right: 0;
+    box-shadow: none;
+    float: right
+}
+.facetwp-type-proximity {
+    position: relative
+}
+.facetwp-type-proximity #facetwp-radius {
+    display: block;
+    margin: 1em 0
+}
+.facetwp-type-proximity .facetwp-update {
+    float: left
+}
+.facetwp-facet select,
+.js-toggle-area-trigger {
+    width: 100%
+}
+.facetwp-pager .facetwp-page,
+.job-manager-pagination li a,
+.job-manager-pagination li span,
+.js-toggle-area-trigger,
+.site .facetwp-sort select,
+a.page-numbers,
+span.page-numbers {
+    box-shadow: rgba(0, 0, 0, .05) 0 3px 0
+}
+.facetwp-pager .facetwp-page,
+.homepage-cover .job_search_form .select:before,
+.job-manager-pagination li a,
+.job-manager-pagination li span,
+.js-toggle-area-trigger,
+.js-toggle-area-trigger:before,
+.site .facetwp-sort .select:before,
+.site .facetwp-sort select,
+a.page-numbers,
+span.page-numbers {
+    background: #fff
+}
+.site-main .facetwp-sort {
+    display: inline-block
+}
+.comment-sorting-filter,
+.comment-sorting-filter-wrapper select,
+.facetwp-pager .facetwp-page,
+.job-manager-pagination li a,
+.job-manager-pagination li span,
+.js-toggle-area-trigger,
+.site .facetwp-sort select,
+a.page-numbers,
+span.page-numbers {
+    padding: 6px 12px
+}
+.job-manager-pagination li span {
+    padding-top: 8px;
+    padding-bottom: 8px
+}
+.comment-sorting-filter-wrapper select,
+.site .facetwp-sort select {
+    padding-right: 40px
+}
+.comment-sorting-filter-wrapper:after,
+.comment-sorting-filter-wrapper:before,
+.js-toggle-area-trigger:after,
+.js-toggle-area-trigger:before,
+.site .facetwp-sort .select:after,
+.site .facetwp-sort .select:before {
+    height: 28px
+}
+.comment-sorting-filter-wrapper:after,
+.facetwp-sort .select:after,
+.js-toggle-area-trigger:after {
+    line-height: 31px!important;
+    margin-top: 1px
+}
+.homepage-cover .facetwp-facet input,
+.homepage-cover .facetwp-facet select {
+    min-width: 0!important
+}
+.homepage-cover .facetwp-type-proximity input[type=text] {
+    display: inline-block;
+    min-width: 0!important
+}
+.homepage-cover .facetwp-type-proximity #facetwp-radius,
+.homepage-cover .facetwp-type-proximity .facetwp-reset,
+.homepage-cover .facetwp-type-proximity .facetwp-update,
+.homepage-cover .facetwp-type-proximity .select {
+    display: none
+}
+.homepage-cover .row {
+    margin-bottom: 1em
+}
+.facetwp-type-search input[type=search],
+.facetwp-type-search input[type=text] {
+    width: 100%;
+    border-radius: 4px
+}
+.homepage-cover .facetwp-type-search input[type=search],
+.homepage-cover .facetwp-type-search input[type=text] {
+    background: #fff;
+    border-color: #fff
+}
+.facetwp-type-slider .noUi-background,
+.facetwp-type-slider .noUi-connect,
+.facetwp-type-slider .noUi-target {
+    background: #e9edf2;
+    border-radius: 20px;
+    border: 0;
+    height: 8px;
+    box-shadow: none
+}
+.facetwp-type-slider .noUi-background,
+.facetwp-type-slider .noUi-connect {
+    border-radius: 0
+}
+.facetwp-type-slider .noUi-horizontal .noUi-handle {
+    width: 18px;
+    height: 18px;
+    background: #fff;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    box-shadow: none;
+    top: -5px;
+    cursor: pointer
+}
+.facetwp-type-slider .noUi-horizontal .noUi-handle.noUi-handle-upper {
+    left: -1px
+}
+.facetwp-type-slider .noUi-horizontal .noUi-handle:after,
+.facetwp-type-slider .noUi-horizontal .noUi-handle:before {
+    display: none
+}
+.facetwp-facet .facetwp-slider-label {
+    float: left
+}
+.facetwp-facet input[type=button].facetwp-slider-reset,
+.facetwp-facet input[type=button].facetwp-slider-reset:focus,
+.facetwp-facet input[type=button].facetwp-slider-reset:hover {
+    padding: 7px 0 0;
+    font-size: 12px
+}
+.facetwp-pager .facetwp-pager-label {
+    vertical-align: middle
+}
+.search-overlay .facetwp-type-search input[type=search].facetwp-search {
+    border-radius: 60px;
+    padding-left: 50px
+}
+.popup.share-popup {
+    max-width: 400px
+}
+body div.sharedaddy h3.sd-title {
+    display: none
+}
+div.sharedaddy .sd-content {
+    text-align: center;
+    margin: 25px 0 10px
+}
+div.sharedaddy .sd-content ul li {
+    margin: 0 4px!important;
+    display: inline-block
+}
+div.sharedaddy .sd-content ul {
+    margin-bottom: 0!important
+}
+div.sharedaddy .sd-content ul li a.sd-button:before {
+    font-size: 24px
+}
+.comment-subscription-form {
+    margin: 2em 0 0
+}
+body #subscribe-email input {
+    width: 100%;
+    padding: 11px 15px
+}
+#sharing_email {
+    top: 50%!important;
+    left: 50%!important;
+    margin-left: -150px
+}
+.mfp-content .ninja-forms-form-title {
+    margin: 0 0 1em;
+    display: none
+}
+.ninja-forms-required-items {
+    margin-bottom: 1em
+}
+.ninja-forms-field-error {
+    color: red;
+    margin: 8px 0 0
+}
+body .gform_wrapper h3.gform_title {
+    font-weight: 400
+}
+.rcp_logged_in {
+    margin-bottom: 1em
+}
+.entry-content .rcp_form {
+    margin-bottom: 3em
+}
+.entry-content .rcp_form:last-of-type {
+    margin-bottom: 0
+}
+.entry-content .rcp_form label {
+    width: auto;
+    float: none
+}
+.entry-content .rcp_form input[type=email],
+.entry-content .rcp_form input[type=password],
+.entry-content .rcp_form input[type=text] {
+    display: block;
+    padding: 12px 15px;
+    width: 100%
+}
+.entry-content .rcp_form .rcp_subscription_fieldset {
+    margin-top: 3em
+}
+.entry-content .rcp_form .rcp_subscription_fieldset .rcp_subscription_message {
+    line-height: 1
+}
+.entry-content .rcp_form .rcp_level_description {
+    border-left: 0;
+    margin-left: 32px;
+    padding-left: 0
+}
+.entry-content .rcp_form #rcp_submit_wrap {
+    margin-top: 2em
+}
+.entry-content .rcp_form label[for=rcp_user_remember] {
+    display: inline-block;
+    line-height: normal;
+    vertical-align: middle
+}
+body .chosen-container {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    zoom: 1;
+    *display: inline;
+    width: 100%!important;
+    max-width: 100%
+}
+body .chosen-container .chosen-drop {
+    position: absolute;
+    top: 120%;
+    left: -9999px;
+    z-index: 1010;
+    width: 100%;
+    border-top: 0;
+    background: #fff;
+    margin-top: -1px;
+    border-radius: 4px;
+    box-shadow: inset rgba(0, 0, 0, .06) 0 0 0 3px;
+    text-shadow: none
+}
+body .chosen-container.chosen-with-drop .chosen-drop {
+    left: 0;
+    padding: 5px
+}
+body .chosen-container a {
+    cursor: pointer
+}
+body .chosen-container-single .chosen-single {
+    position: relative;
+    display: block;
+    padding: 11px 15px;
+    line-height: normal;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 4px;
+    text-decoration: none;
+    white-space: nowrap;
+    text-shadow: none
+}
+body .chosen-container-single .chosen-default {
+    color: #999
+}
+body .chosen-container-single .chosen-single span {
+    display: block;
+    margin-right: 26px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-shadow: none;
+    overflow: hidden
+}
+body .chosen-container-single .chosen-single-with-deselect span {
+    margin-right: 38px
+}
+body .chosen-container-single .chosen-single abbr {
+    position: absolute;
+    top: 6px;
+    right: 26px;
+    display: block;
+    width: 12px;
+    height: 12px;
+    background: "" -42px 1px no-repeat;
+    font-size: 1px
+}
+body .chosen-container-single .chosen-single abbr:hover,
+body .chosen-container-single.chosen-disabled .chosen-single abbr:hover {
+    background-position: -42px -10px
+}
+body .chosen-container-single .chosen-single div {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 40px;
+    height: 100%
+}
+body .chosen-container-single .chosen-search {
+    position: relative;
+    z-index: 1010;
+    margin: 0;
+    padding: 3px 4px;
+    white-space: nowrap
+}
+body .chosen-container-single .chosen-search input[type=text] {
+    margin: 1px 0;
+    padding: 4px 20px 4px 5px;
+    width: 100%;
+    height: auto;
+    outline: 0;
+    border: 1px solid #aaa;
+    font-size: 1em;
+    font-family: sans-serif;
+    line-height: normal;
+    border-radius: 0
+}
+body .chosen-container-single .chosen-search input[type=text]:focus {
+    border: 1px solid #aaa
+}
+body .chosen-container-single.chosen-container-single-nosearch .chosen-search {
+    position: absolute;
+    left: -9999px
+}
+body .chosen-container .chosen-results {
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin: 0 4px 4px 0;
+    padding: 0 0 0 4px;
+    max-height: 240px;
+    -webkit-overflow-scrolling: touch
+}
+body .chosen-container .chosen-results li {
+    display: none;
+    margin: 0;
+    padding: 5px 6px;
+    list-style: none;
+    line-height: 15px;
+    word-wrap: break-word;
+    -webkit-touch-callout: none
+}
+body .chosen-container .chosen-results li.active-result {
+    display: list-item;
+    cursor: pointer
+}
+body .chosen-container .chosen-results li.disabled-result {
+    display: list-item;
+    color: #ccc;
+    cursor: default
+}
+body .chosen-container .chosen-results li.highlighted {
+    background-color: #3875d7;
+    color: #fff!important
+}
+body .chosen-container .chosen-results li.no-results {
+    display: list-item
+}
+body .chosen-container .chosen-results li.group-result {
+    display: list-item;
+    font-weight: 700;
+    cursor: default
+}
+body .chosen-container .chosen-results li.group-option {
+    padding-left: 15px
+}
+body .chosen-container .chosen-results li em {
+    font-style: normal;
+    text-decoration: underline
+}
+body .chosen-container-multi .chosen-choices {
+    position: relative;
+    background: 0 0;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto!important;
+    height: 1%;
+    cursor: text
+}
+body .chosen-container-multi .chosen-choices li {
+    float: left;
+    list-style: none
+}
+body .chosen-container-multi .chosen-choices li.search-field {
+    padding: 0;
+    white-space: nowrap
+}
+body .chosen-container-multi .chosen-choices li.search-field input[type=text] {
+    margin: 0;
+    padding: 13px 14px;
+    outline: 0;
+    border-width: 1px;
+    border-style: solid;
+    box-shadow: none;
+    border-radius: 4;
+    width: 100%!important
+}
+body .chosen-container-multi .chosen-choices li.search-choice {
+    position: relative;
+    margin: 0 10px 1em 0;
+    max-width: 100%;
+    line-height: 13px;
+    cursor: default
+}
+body .chosen-container-multi .chosen-choices li.search-choice span {
+    padding-left: 26px;
+    word-wrap: break-word
+}
+body .chosen-container-multi .chosen-choices li.search-choice .search-choice-close {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    font-size: 1px
+}
+body .chosen-container-multi .chosen-choices li.search-choice .search-choice-close:hover:after {
+    display: inline-block;
+    font-family: Ionicons;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    text-rendering: auto;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: '\f12a'
+}
+body .chosen-container-multi .chosen-choices li.search-choice-disabled {
+    padding-right: 5px;
+    border: 1px solid #ccc;
+    background-color: #e4e4e4;
+    color: #666
+}
+body .chosen-container-multi .chosen-choices li.search-choice-focus {
+    background: #d4d4d4
+}
+body .chosen-container-multi .chosen-choices li.search-choice-focus .search-choice-close {
+    background-position: -42px -10px
+}
+body .chosen-container-multi .chosen-results {
+    margin: 0;
+    padding: 0
+}
+body .chosen-container-multi .chosen-drop {
+    top: 110%
+}
+body .chosen-container-multi .chosen-drop .result-selected {
+    display: list-item;
+    color: #ccc;
+    cursor: default
+}
+body .chosen-container-active.chosen-with-drop .chosen-single div {
+    border-left: 0;
+    background: 0 0
+}
+body .chosen-container-active.chosen-with-drop .chosen-single div b {
+    background-position: -18px 2px
+}
+body .chosen-container-active .chosen-choices {
+    background: #fff
+}
+body .chosen-disabled {
+    opacity: .5!important;
+    cursor: default
+}
+body .chosen-disabled .chosen-choices .search-choice .search-choice-close,
+body .chosen-disabled .chosen-single {
+    cursor: default
+}
+body .chosen-rtl {
+    text-align: right
+}
+body .chosen-rtl .chosen-single {
+    overflow: visible;
+    padding: 0 16px 0 0
+}
+body .chosen-rtl .chosen-single-with-deselect span {
+    margin-left: 38px
+}
+body .chosen-rtl.chosen-container-active.chosen-with-drop .chosen-single div {
+    border-right: 0
+}
+body .chosen-rtl.chosen-container-single .chosen-results {
+    margin: 0 0 4px 4px;
+    padding: 0 4px 0 0
+}
+body .chosen-rtl .chosen-results li.group-option {
+    padding-right: 15px;
+    padding-left: 0
+}
+body .chosen-rtl .chosen-search input[type=text] {
+    padding: 4px 5px 4px 20px;
+    background: #fff "" no-repeat -30px -20px
+}
+body .chosen-rtl.chosen-container-single .chosen-single div b {
+    background-position: 6px 2px
+}
+body .chosen-rtl.chosen-container-single.chosen-with-drop .chosen-single div b {
+    background-position: -12px 2px
+}
+body .chosen-rtl .chosen-search input[type=search] {
+    direction: rtl
+}
+body .chosen-rtl .chosen-single span {
+    margin-right: 0;
+    margin-left: 26px;
+    direction: rtl
+}
+body .chosen-rtl .chosen-single div {
+    right: auto;
+    left: 0
+}
+body .chosen-rtl .chosen-single abbr {
+    right: auto;
+    left: 26px
+}
+body .chosen-rtl .chosen-choices li {
+    float: right
+}
+body .chosen-rtl .chosen-choices li.search-field input[type=text] {
+    direction: rtl
+}
+body .chosen-rtl .chosen-choices li.search-choice {
+    margin: 3px 5px 3px 0;
+    padding: 3px 5px 3px 19px
+}
+body .chosen-rtl .chosen-choices li.search-choice .search-choice-close {
+    right: auto;
+    left: 4px
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min-resolution: 144dpi) {
+    .chosen-container .chosen-results-scroll-down span,
+    .chosen-container .chosen-results-scroll-up span,
+    .chosen-container-multi .chosen-choices .search-choice .search-choice-close,
+    .chosen-container-single .chosen-search input[type=text],
+    .chosen-container-single .chosen-single abbr,
+    .chosen-container-single .chosen-single div b,
+    .chosen-rtl .chosen-search input[type=text] {
+        background-image: ""!important;
+        background-size: 52px 37px!important;
+        background-repeat: no-repeat!important
+    }
+}
+.select2-container {
+    margin: 0;
+    position: relative;
+    display: block!important;
+    zoom: 1;
+    *display: inline;
+    vertical-align: middle
+}
+.select2-container,
+.select2-drop,
+.select2-search,
+.select2-search input {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+.select2-container .select2-choice {
+    color: #999;
+    text-shadow: none;
+    text-decoration: none;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    padding: 16px 15px 15px;
+    white-space: nowrap;
+    line-height: 1;
+    border: 0;
+    border-radius: 4px;
+    box-shadow: inset rgba(0, 0, 0, .05) 0 -3px 0;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #fff;
+    font-weight: 400
+}
+html[dir=rtl] .select2-container .select2-choice {
+    padding: 0 8px 0 0
+}
+.select2-container.select2-allowclear .select2-choice .select2-chosen {
+    margin-right: 42px
+}
+.select2-container .select2-choice>.select2-chosen {
+    margin-right: 26px;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    float: none;
+    width: auto
+}
+html[dir=rtl] .select2-container .select2-choice>.select2-chosen {
+    margin-left: 26px;
+    margin-right: 0
+}
+.select2-container .select2-choice abbr {
+    display: none;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    right: 24px;
+    top: 5px;
+    font-size: 1px;
+    text-decoration: none;
+    border: 0;
+    background: url(../images/select2.png) right top no-repeat;
+    cursor: pointer;
+    outline: 0
+}
+.select2-container.select2-allowclear .select2-choice abbr {
+    display: inline-block
+}
+.select2-container .select2-choice abbr:hover {
+    background-position: right -11px;
+    cursor: pointer
+}
+.select2-drop-mask {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    min-height: 100%;
+    min-width: 100%;
+    height: auto;
+    width: auto;
+    opacity: 0;
+    z-index: 9998;
+    background-color: #fff;
+    filter: alpha(opacity=0)
+}
+.select2-drop {
+    width: 100%;
+    margin-top: 5px;
+    position: absolute;
+    z-index: 9999;
+    top: 100%;
+    background: #fff;
+    color: #000;
+    border-radius: 4px;
+    box-shadow: inset rgba(0, 0, 0, .06) 0 0 0 3px
+}
+.select2-drop.select2-drop-above {
+    margin-top: -5px
+}
+.select2-drop-auto-width {
+    width: auto
+}
+.select2-drop-auto-width .select2-search {
+    padding-top: 4px
+}
+.select2-container .select2-choice .select2-arrow {
+    display: inline-block;
+    width: 35px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 0 3px 3px 0;
+    background-clip: padding-box
+}
+html[dir=rtl] .select2-container .select2-choice .select2-arrow {
+    left: 0;
+    right: auto;
+    border-radius: 3px 0 0 3px
+}
+.select2-container .select2-choice .select2-arrow b {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative
+}
+.select2-container .select2-choice .select2-arrow b:after {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 50%;
+    left: 50%;
+    border: 4px solid transparent;
+    border-top-color: #666;
+    margin-left: -7px;
+    margin-top: -2px
+}
+.select2-search {
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+    padding-left: 7px;
+    padding-right: 7px;
+    position: relative;
+    z-index: 10000;
+    white-space: nowrap;
+    padding-bottom: 4px
+}
+.select2-search input {
+    width: 100%;
+    padding: 4px;
+    margin: 8px 0 0;
+    outline: 0;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background: #fff url(../images/select2.png) no-repeat 100% -22px
+}
+html[dir=rtl] .select2-search input {
+    padding: 4px 5px 4px 20px;
+    background: #fff url(../images/select2.png) no-repeat -37px -22px
+}
+.select2-drop.select2-drop-above .select2-search input {
+    margin-top: 4px
+}
+.select2-search input.select2-active {
+    background: #fff url(../images/select2-spinner.gif) no-repeat 100%
+}
+.select2-container-active .select2-choice,
+.select2-container-active .select2-choices {
+    outline: 0
+}
+.select2-dropdown-open .select2-choice .select2-arrow b:after {
+    border-top-color: transparent;
+    border-bottom-color: #666;
+    margin-top: -6px
+}
+.select2-dropdown-open .select2-choice .select2-arrow {
+    background: 0 0;
+    border-left: 0;
+    filter: none
+}
+html[dir=rtl] .select2-dropdown-open .select2-choice .select2-arrow {
+    border-right: 0
+}
+.select2-dropdown-open .select2-choice .select2-arrow b {
+    background-position: -18px 1px
+}
+html[dir=rtl] .select2-dropdown-open .select2-choice .select2-arrow b {
+    background-position: -16px 1px
+}
+.select2-hidden-accessible {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px
+}
+.select2-results {
+    max-height: 200px;
+    padding: 4px;
+    margin: 0;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto
+}
+html[dir=rtl] .select2-results {
+    padding: 0 4px 0 0;
+    margin: 4px 0 4px 4px
+}
+.select2-results ul.select2-result-sub {
+    margin: 0;
+    padding-left: 0
+}
+.select2-results li {
+    list-style: none;
+    display: list-item;
+    background-image: none;
+    margin: 3px 0
+}
+.select2-results li.select2-result-with-children>.select2-result-label {
+    font-weight: 700
+}
+.select2-results .select2-result-label {
+    padding: 5px 7px;
+    margin: 0;
+    cursor: pointer;
+    min-height: 1em;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+.select2-results-dept-1 .select2-result-label {
+    padding-left: 20px
+}
+.select2-results-dept-2 .select2-result-label {
+    padding-left: 40px
+}
+.select2-results-dept-3 .select2-result-label {
+    padding-left: 60px
+}
+.select2-results-dept-4 .select2-result-label {
+    padding-left: 80px
+}
+.select2-results-dept-5 .select2-result-label {
+    padding-left: 100px
+}
+.select2-results-dept-6 .select2-result-label {
+    padding-left: 110px
+}
+.select2-results-dept-7 .select2-result-label {
+    padding-left: 120px
+}
+.select2-results .select2-highlighted {
+    color: #fff;
+    background-color: #3875d7
+}
+.select2-results li em {
+    background: #feffde;
+    font-style: normal
+}
+.select2-results .select2-highlighted em {
+    background: 0 0
+}
+.select2-results .select2-highlighted ul {
+    color: #fff;
+    background-color: #3875d7
+}
+.select2-results .select2-ajax-error,
+.select2-results .select2-no-results,
+.select2-results .select2-searching,
+.select2-results .select2-selection-limit {
+    background: #f4f4f4;
+    display: list-item;
+    padding-left: 5px
+}
+.select2-results .select2-disabled.select2-highlighted {
+    color: #666;
+    background: #f4f4f4;
+    display: list-item;
+    cursor: default
+}
+.select2-results .select2-disabled {
+    background: #f4f4f4;
+    display: list-item;
+    cursor: default
+}
+.select2-results .select2-selected {
+    display: none
+}
+.select2-more-results.select2-active {
+    background: #f4f4f4 url(../images/select2-spinner.gif) no-repeat 100%
+}
+.select2-results .select2-ajax-error {
+    background: rgba(255, 50, 50, .2)
+}
+.select2-more-results {
+    background: #f4f4f4;
+    display: list-item
+}
+.select2-container.select2-container-disabled .select2-choice {
+    background-color: #f4f4f4;
+    background-image: none;
+    cursor: default
+}
+.select2-container.select2-container-disabled .select2-choice .select2-arrow {
+    background-color: #f4f4f4;
+    background-image: none;
+    border-left: 0
+}
+.select2-container.select2-container-disabled .select2-choice abbr {
+    display: none
+}
+.select2-container-multi .select2-choices {
+    height: auto!important;
+    height: 1%;
+    margin: 0;
+    padding: 0 5px 0 0;
+    position: relative;
+    cursor: text;
+    overflow: hidden;
+    background-color: #fff
+}
+html[dir=rtl] .select2-container-multi .select2-choices {
+    padding: 0 0 0 5px
+}
+.select2-locked {
+    padding: 3px 5px!important
+}
+.select2-container-multi .select2-choices {
+    min-height: 26px
+}
+.select2-container-multi.select2-container-active .select2-choices {
+    border: 1px solid #666;
+    outline: 0
+}
+.select2-container-multi .select2-choices li {
+    float: left;
+    list-style: none
+}
+html[dir=rtl] .select2-container-multi .select2-choices li {
+    float: right
+}
+.select2-container-multi .select2-choices .select2-search-field {
+    margin: 0;
+    padding: 0;
+    white-space: nowrap
+}
+.select2-container-multi .select2-choices .select2-search-field input {
+    padding: 5px;
+    margin: 1px 0;
+    outline: 0;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background: transparent!important
+}
+.select2-container-multi .select2-choices .select2-search-field input.select2-active {
+    background: #fff url(../images/select2-spinner.gif) no-repeat 100%!important
+}
+.select2-default {
+    color: inherit
+}
+.select2-container-multi .select2-choices .select2-search-choice {
+    padding: 5px 8px 5px 24px;
+    margin: 3px 0 3px 5px;
+    position: relative;
+    line-height: 15px;
+    color: inherit;
+    cursor: default;
+    border-radius: 2px;
+    background-clip: padding-box;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #e4e4e4
+}
+html[dir=rtl] .select2-container-multi .select2-choices .select2-search-choice {
+    margin: 3px 5px 3px 0;
+    padding: 5px 24px 5px 8px
+}
+.select2-container-multi .select2-choices .select2-search-choice .select2-chosen {
+    cursor: default
+}
+.select2-container-multi .select2-choices .select2-search-choice-focus {
+    background: #d4d4d4
+}
+.select2-search-choice-close {
+    display: block;
+    width: 12px;
+    height: 13px;
+    position: absolute;
+    right: 7px;
+    top: 6px;
+    font-size: 1px;
+    outline: 0;
+    background: url(../images/select2.png) right top no-repeat
+}
+html[dir=rtl] .select2-search-choice-close {
+    right: auto;
+    left: 7px
+}
+.select2-container-multi .select2-search-choice-close {
+    left: 7px
+}
+html[dir=rtl] .select2-container-multi .select2-search-choice-close {
+    left: auto;
+    right: 7px
+}
+.select2-container-multi .select2-choices .select2-search-choice .select2-search-choice-close:hover,
+.select2-container-multi .select2-choices .select2-search-choice-focus .select2-search-choice-close {
+    background-position: right -11px
+}
+.select2-container-multi.select2-container-disabled .select2-choices {
+    background-color: #f4f4f4;
+    background-image: none;
+    cursor: default
+}
+.select2-container-multi.select2-container-disabled .select2-choices .select2-search-choice {
+    padding: 3px 5px;
+    background-image: none;
+    background-color: #f4f4f4
+}
+.select2-container-multi.select2-container-disabled .select2-choices .select2-search-choice .select2-search-choice-close {
+    display: none;
+    background: 0 0
+}
+.select2-result-selectable .select2-match,
+.select2-result-unselectable .select2-match {
+    text-decoration: underline
+}
+.select2-offscreen,
+.select2-offscreen:focus {
+    clip: rect(0 0 0 0)!important;
+    width: 1px!important;
+    height: 1px!important;
+    border: 0!important;
+    margin: 0!important;
+    padding: 0!important;
+    overflow: hidden!important;
+    position: absolute!important;
+    outline: 0!important;
+    left: 0!important;
+    top: 0!important
+}
+.select2-display-none {
+    display: none
+}
+.select2-measure-scrollbar {
+    position: absolute;
+    top: -10000px;
+    left: -10000px;
+    width: 100px;
+    height: 100px;
+    overflow: scroll
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 2dppx) {
+    .select2-search input {
+        background-image: url(../images/select2x2.png)!important;
+        background-repeat: no-repeat!important;
+        background-size: 60px 40px!important;
+        background-position: 100% -21px!important
+    }
+}
+.slick-next,
+.slick-prev {
+    position: absolute;
+    display: block;
+    height: 20px;
+    width: 20px;
+    line-height: 0;
+    font-size: 0;
+    cursor: pointer;
+    background: 0 0;
+    color: transparent;
+    top: 50%;
+    margin-top: -10px;
+    padding: 0;
+    border: 0;
+    outline: 0
+}
+.slick-next:focus,
+.slick-next:hover,
+.slick-prev:focus,
+.slick-prev:hover {
+    outline: 0;
+    background: 0 0;
+    color: transparent
+}
+.slick-next:focus:before,
+.slick-next:hover:before,
+.slick-prev:focus:before,
+.slick-prev:hover:before {
+    opacity: 1
+}
+.slick-next.slick-disabled:before,
+.slick-prev.slick-disabled:before {
+    opacity: .25
+}
+.slick-next:before,
+.slick-prev:before {
+    font-size: 20px;
+    line-height: 1;
+    color: #fff;
+    opacity: .75;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+.slick-prev {
+    left: -25px
+}
+[dir=rtl] .slick-prev {
+    left: auto;
+    right: -25px
+}
+.slick-prev:before {
+    content: "â†"
+}
+[dir=rtl] .slick-prev:before {
+    content: "â†’"
+}
+.slick-next {
+    right: -25px
+}
+[dir=rtl] .slick-next {
+    left: -25px;
+    right: auto
+}
+.slick-next:before {
+    content: "â†’"
+}
+[dir=rtl] .slick-next:before {
+    content: "â†"
+}
+.slick-slider {
+    margin-bottom: 30px
+}
+.slick-dots {
+    position: absolute;
+    bottom: -45px;
+    list-style: none;
+    display: block;
+    text-align: center;
+    padding: 0;
+    width: 100%
+}
+.slick-dots li {
+    position: relative;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer
+}
+.slick-dots li button {
+    border: 0;
+    background: 0 0;
+    display: block;
+    height: 20px;
+    width: 20px;
+    outline: 0;
+    line-height: 0;
+    font-size: 0;
+    color: transparent;
+    padding: 5px;
+    cursor: pointer
+}
+.slick-dots li button:focus,
+.slick-dots li button:hover {
+    outline: 0
+}
+.slick-dots li button:focus:before,
+.slick-dots li button:hover:before {
+    opacity: 1
+}
+.slick-dots li button:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "â€¢";
+    width: 20px;
+    height: 20px;
+    font-size: 6px;
+    line-height: 20px;
+    text-align: center;
+    color: #000;
+    opacity: .25;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+.slick-dots li.slick-active button:before {
+    color: #000;
+    opacity: .75
+}
+.mfp-wrap {
+    z-index: 1030
+}
+.mfp-bg {
+    z-index: 1029;
+    background-color: rgba(47, 51, 57, .89)
+}
+.mfp-content .mfp-close {
+    background: 0 0;
+    padding: 0;
+    box-shadow: none;
+    border-radius: 0;
+    line-height: normal;
+    width: auto;
+    height: auto;
+    opacity: 1;
+    font-size: 0;
+    top: 20px;
+    right: 35px
+}
+@media (min-width: 768px) {
+    .mfp-content .mfp-close {
+        top: 28px
+    }
+    .gallery-overlay #main {
+        margin-top: 32px
+    }
+    .gallery-overlay .mfp-content .mfp-close {
+        top: 15px;
+        right: 30px
+    }
+    .gallery-overlay.admin-bar #main {
+        margin-top: 62px
+    }
+    .gallery-overlay.admin-bar .mfp-content .mfp-close {
+        top: 20px;
+        right: 40px
+    }
+}
+.gallery-overlay .mfp-content .mfp-close:before {
+    color: #fff
+}
+.mfp-content .mfp-close:before {
+    display: inline-block;
+    font-family: Ionicons;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    text-rendering: auto;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #b4bcc7;
+    font-size: 26px;
+    padding-left: 2px;
+    content: '\f129'
+}
+.popup {
+    display: none;
+    background: #FFF;
+    padding: 2em;
+    text-align: left;
+    max-width: 550px;
+    margin: 40px auto;
+    position: relative;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, .15) 0 0 0 4px
+}
+.mfp-auto-cursor .mfp-content {
+    top: 0
+}
+.mfp-content .popup-wide {
+    max-width: 95%
+}
+@media (min-width: 768px) {
+    .mfp-content .popup {
+        padding: 2.5em
+    }
+    .mfp-content .popup.popup-wide {
+        max-width: 75%
+    }
+}
+.mfp-content .popup {
+    display: block
+}
+.popup-title,
+body .gform_wrapper h3.gform_title {
+    font-size: 20px;
+    margin: 0 40px 1em 0
+}
+@media (min-width: 768px) {
+    .popup-title,
+    body .gform_wrapper h3.gform_title {
+        font-size: 24px
+    }
+}
+button.mfp-arrow {
+    top: 50%
+}
+.mfp-container button.mfp-arrow,
+.mfp-container button.mfp-arrow:focus,
+.mfp-container button.mfp-arrow:hover {
+    background-color: transparent
+}
+.content-shop-wrapper .popup .type-product,
+.listify_widget_search_listings.home-widget .popup .job_search_form,
+.popup .archive-job_listing-toggle-inner,
+.popup .content-box,
+.popup .content-shop-wrapper .type-product,
+.popup .home-feature,
+.popup .job-package,
+.popup .listify_widget_search_listings.home-widget .job_search_form,
+.popup .listing-by-term-inner,
+.popup .single-job_listing-description,
+.popup .tabbed-listings-tabs a,
+.popup .type-product .thumbnails a,
+.popup .woocommerce div.product div.summary,
+.popup .woocommerce-main-image,
+.popup .woocommerce-page div.product div.summary,
+.popup .woocommerce-tabs,
+.tabbed-listings-tabs .popup a,
+.type-product .thumbnails .popup a,
+.woocommerce div.product .popup div.summary,
+.woocommerce-page div.product .popup div.summary {
+    margin-bottom: 0
+}
+.content-shop-wrapper .popup .content-box-wrapper.type-product .content-box-inner,
+.content-shop-wrapper .popup .type-page.content-box-wrapper.type-product .content-box-inner,
+.listify_widget_search_listings.home-widget .popup .content-box-wrapper.job_search_form .content-box-inner,
+.listify_widget_search_listings.home-widget .popup .type-page.content-box-wrapper.job_search_form .content-box-inner,
+.popup .content-box-wrapper.archive-job_listing-toggle-inner .content-box-inner,
+.popup .content-box-wrapper.home-feature .content-box-inner,
+.popup .content-box-wrapper.job-package .content-box-inner,
+.popup .content-box-wrapper.listing-by-term-inner .content-box-inner,
+.popup .content-box-wrapper.single-job_listing-description .content-box-inner,
+.popup .content-box-wrapper.woocommerce-main-image .content-box-inner,
+.popup .content-box-wrapper.woocommerce-tabs .content-box-inner,
+.popup .content-box.content-box-wrapper .content-box-inner,
+.popup .content-shop-wrapper .content-box-wrapper.type-product .content-box-inner,
+.popup .content-shop-wrapper .type-page.content-box-wrapper.type-product .content-box-inner,
+.popup .listify_widget_search_listings.home-widget .content-box-wrapper.job_search_form .content-box-inner,
+.popup .listify_widget_search_listings.home-widget .type-page.content-box-wrapper.job_search_form .content-box-inner,
+.popup .tabbed-listings-tabs a.content-box-wrapper .content-box-inner,
+.popup .tabbed-listings-tabs a.type-page.content-box-wrapper .content-box-inner,
+.popup .type-page.content-box-wrapper.archive-job_listing-toggle-inner .content-box-inner,
+.popup .type-page.content-box-wrapper.home-feature .content-box-inner,
+.popup .type-page.content-box-wrapper.job-package .content-box-inner,
+.popup .type-page.content-box-wrapper.listing-by-term-inner .content-box-inner,
+.popup .type-page.content-box-wrapper.single-job_listing-description .content-box-inner,
+.popup .type-page.content-box-wrapper.woocommerce-main-image .content-box-inner,
+.popup .type-page.content-box-wrapper.woocommerce-tabs .content-box-inner,
+.popup .type-page.content-box.content-box-wrapper .content-box-inner,
+.popup .type-product .thumbnails a.content-box-wrapper .content-box-inner,
+.popup .type-product .thumbnails a.type-page.content-box-wrapper .content-box-inner,
+.popup .woocommerce div.product div.content-box-wrapper.summary .content-box-inner,
+.popup .woocommerce div.product div.type-page.content-box-wrapper.summary .content-box-inner,
+.popup .woocommerce-page div.product div.content-box-wrapper.summary .content-box-inner,
+.popup .woocommerce-page div.product div.type-page.content-box-wrapper.summary .content-box-inner,
+.tabbed-listings-tabs .popup a.content-box-wrapper .content-box-inner,
+.tabbed-listings-tabs .popup a.type-page.content-box-wrapper .content-box-inner,
+.type-product .thumbnails .popup a.content-box-wrapper .content-box-inner,
+.type-product .thumbnails .popup a.type-page.content-box-wrapper .content-box-inner,
+.woocommerce div.product .popup div.content-box-wrapper.summary .content-box-inner,
+.woocommerce div.product .popup div.type-page.content-box-wrapper.summary .content-box-inner,
+.woocommerce-page div.product .popup div.content-box-wrapper.summary .content-box-inner,
+.woocommerce-page div.product .popup div.type-page.content-box-wrapper.summary .content-box-inner {
+    padding: 0
+}
+.content-shop-wrapper .popup .type-product,
+.listify_widget_search_listings.home-widget .popup .job_search_form,
+.popup .archive-job_listing-toggle-inner,
+.popup .content-box,
+.popup .content-shop-wrapper .type-product,
+.popup .home-feature,
+.popup .job-package,
+.popup .listify_widget_search_listings.home-widget .job_search_form,
+.popup .listing-by-term-inner,
+.popup .single-job_listing-description,
+.popup .tabbed-listings-tabs a,
+.popup .type-product .thumbnails a,
+.popup .woocommerce div.product div.summary,
+.popup .woocommerce-main-image,
+.popup .woocommerce-page div.product div.summary,
+.popup .woocommerce-tabs,
+.tabbed-listings-tabs .popup a,
+.type-product .thumbnails .popup a,
+.woocommerce div.product .popup div.summary,
+.woocommerce-page div.product .popup div.summary {
+    box-shadow: none;
+    border: 0;
+    background: 0 0
+}
+.home .popup .wocommerce-error,
+.popup .wocommerce-error {
+    margin-top: 0
+}
+#opentable.popup {
+    max-width: 234px
+}
+#opentable.popup .mfp-close {
+    top: 5px;
+    right: 5px
+}
+body #OT_searchWrapperAll *,
+body #opentable.popup * {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box
+}
+body #OT_searchWrapperAll {
+    height: 150px
+}
+#OT_searchWrapper #startDate {
+    padding: 4px
+}
+#resurva.popup {
+    max-width: 365px
+}
+.call-to-action {
+    background: #fff;
+    padding: 4em 0
+}
+@media (min-width: 768px) {
+    .call-to-action {
+        padding: 6em 0
+    }
+}
+.cta-title {
+    margin: 0 0 .75em;
+    font-size: 18px
+}
+.cta-description p {
+    color: #b4bcc7;
+    font-size: 14px;
+    line-height: 1.5
+}
+@media (min-width: 992px) {
+    .cta-title {
+        margin-bottom: 1em;
+        font-size: 23px
+    }
+    .cta-description p {
+        font-size: 15px;
+        line-height: 1.75
+    }
+}
+.cta-description p:last-child,
+.cta-description p:only-child {
+    margin-bottom: 0
+}
+.cta-button-wrapper {
+    margin-top: 2em
+}
+@media (min-width: 992px) {
+    .cta-button-wrapper {
+        margin-top: 0;
+        text-align: center
+    }
+}
+.cta-subtext {
+    font-size: 13px;
+    color: #b4bcc7;
+    display: block;
+    margin-top: 12px
+}
+.as-seen-on {
+    padding: 3em
+}
+@media (min-width: 768px) {
+    .as-seen-on {
+        padding: 6em
+    }
+}
+.aso-title {
+    margin: 0 0 2em;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: rgba(0, 0, 0, .2) 0 1px 1px
+}
+.aso-content,
+.aso-content a,
+.aso-content a:hover {
+    text-align: center;
+    color: #fff
+}
+.aso-content img {
+    max-width: 100%
+}
+.aso-content a {
+    display: inline-block;
+    vertical-align: middle
+}
+.site-footer {
+    color: #515b6a;
+    padding: 3em 0;
+    background-color: #22262c;
+    overflow: hidden
+}
+.site-footer a {
+    color: #fff
+}
+.site-info {
+    line-height: 26px
+}
+@media (min-width: 768px) {
+    .site-info {
+        float: left
+    }
+    .site-social {
+        float: right
+    }
+}
+.site-footer-widgets {
+    background-color: #2f3339;
+    padding: 6em 0
+}
+.footer-widget-column {
+    margin-bottom: 3em
+}
+.footer-widget-column:last-child {
+    margin-bottom: 0
+}
+@media (min-width: 768px) {
+    .footer-widget-column {
+        margin-bottom: 0
+    }
+    .footer-widget-column:first-child {
+        margin-bottom: 4em
+    }
+}
+@media (min-width: 1200px) {
+    .footer-widget-column {
+        margin-bottom: 0
+    }
+}
+.footer-widget {
+    margin-bottom: 3em
+}
+.footer-widget li:before {
+    margin-right: 6px
+}
+.footer-widget:last-child {
+    margin-bottom: 0
+}
+.footer-widget-title {
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 0 0 1em
+}
+.footer-widget,
+.footer-widget a,
+.footer-widget a:hover {
+    color: #fff
+}
+.footer-widget ol,
+.footer-widget ul {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+.footer-widget ol ol,
+.footer-widget ul ul {
+    list-style: disc;
+    margin-left: .5em
+}
+.site-social {
+    margin-top: 1em
+}
+.fixed-map .site-social {
+    display: none
+}
+@media (min-width: 768px) {
+    .site-social {
+        margin-top: 0
+    }
+}
+.site-social ul {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+.site-social li {
+    display: inline-block;
+    margin-left: 10px
+}
+.site-social a {
+    color: #515b6a;
+    display: inline-block;
+    vertical-align: middle
+}
+.site-social a:before {
+    display: inline-block;
+    font-family: Ionicons;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    text-rendering: auto;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 24px
+}
+.site-social a[href$=".rss"],
+.site-social a[href*="facebook.com"],
+.site-social a[href*="twitter.com"],
+.site-social a[href*="plus.google.com"],
+.site-social a[href*="linkedin.com"],
+.site-social a[href*="instagram.com"],
+.site-social a[href*="pinterest.com"],
+.site-social a[href*="vimeo.com"],
+.site-social a[href*="tumblr.com"],
+.site-social a[href*="youtube.com"] {
+    font-size: 0
+}
+.site-social a[href*="facebook.com"]::before {
+    content: '\f231'
+}
+.site-social a[href*="twitter.com"]::before {
+    content: '\f243'
+}
+.site-social a[href*="plus.google.com"]::before {
+    content: '\f235'
+}
+.site-social a[href*="linkedin.com"]::before {
+    content: '\f239'
+}
+.site-social a[href*="instagram.com"]::before {
+    content: '\f350'
+}
+.site-social a[href*="pinterest.com"]::before {
+    content: '\f2b1'
+}
+.site-social a[href*="vimeo.com"]::before {
+    content: '\f245'
+}
+.site-social a[href*="tumblr.com"]::before {
+    content: '\f241'
+}
+.site-social a[href*="youtube.com"]::before {
+    content: '\f24d'
+}
+.site-social a[href$=".rss"]::before {
+    content: '\f245'
+}

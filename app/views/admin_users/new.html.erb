@@ -1,0 +1,78 @@
+<div class="container margin-top-6">
+  <div class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 margin-top-8" role="dialog"> 
+    <div class="panel panel-info" >
+      <div class="panel-heading">
+        <div class="panel-title">Admin Login</div>
+      </div> 
+      <div style="padding-top:30px" class="panel-body" >
+        <div style="display:none" id="login-alert" class="alert alert-danger col-sm-12"></div>
+        <%=form_for :admin,url: admin_users_path,:html=>{:class=>"form-horizontal"} do |f|%> 
+           <div class="row">
+            <div class="form-group">
+              <div class="col-lg-3 margin-left-2">
+                <%=f.label :email_id%>
+              </div> 
+              <div class="col-lg-7">           
+                <%=f.email_field :email_id,:class=>"form-control input-sm",:placeholder=>"Enter your user name",:id=>"email",:required=>"true"%>
+              </div>
+            </div>
+            <div class="form-group margin-top-2">
+              <div class="col-lg-3 margin-left-2">
+                  <%=f.label :password%>   
+              </div> 
+              <div class="col-lg-7">  
+                  <%=f.password_field :password,:class=>"form-control input-sm",:placeholder=>"Enter your password",:id=>"pass"%>
+              </div>
+            </div>
+          </div>  
+          <div style="margin-top:10px" class="form-group">
+            <div class="col-sm-12 controls">
+              <%=f.button "Login" ,:class=>"btn btn-success form-control",:id=>"hotel-submit"%>
+              <a href="#"></a>
+            </div>
+          </div>  
+        <%end%>     
+      </div>                     
+    </div>  
+  </div>
+</div>  
+
+
+
+
+
+
+<script type="text/javascript">
+$( document ).ready(function() {
+    $('#submit_form').click(function(){
+      if($('#name').val().trim()== "")
+      {
+        alert("name can't be blank");
+        return false
+      }
+    else if($('#email').val().trim()== "")
+    {
+      alert("please enter the email address");
+      return false
+    }
+    else if($('#title').val().trim()== "")
+    {
+      alert("title cannot be null");
+      return false
+    }
+    else if($('#Description').val().trim()== "")
+    {
+      alert("Description cannot be null");
+      return false
+    }
+    else
+    {
+        return true
+    }
+});
+  }); 
+</script>
+
+
+
+
