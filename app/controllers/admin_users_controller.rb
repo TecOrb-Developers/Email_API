@@ -7,9 +7,7 @@ class AdminUsersController < ApplicationController
 		if @user && @user.authenticate(params[:admin][:password])
 			session[:user_id]=@user.id
 			flash[:notice]="welcome"
-			p "------------------#{@user.inspect}"
-			flash[:error]="successful login"
-			redirect_to admin_user_path(@user.id)
+			redirect_to admin_users_path
 		else
 			flash[:error]="user does not exist"
 			redirect_to :back

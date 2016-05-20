@@ -1,0 +1,21 @@
+<div class="container margin-top-6">
+<table class="table table-responsive table-striped">
+	<thead>
+		<tr>
+			<th>S.No.</th>
+			<th>Emails</th>
+			<th>Email Sent at</th>
+		</tr>
+	</thead>
+	<tbody>
+		<%@c=0%>
+		<%@emails.each do |e|%>
+			<tr>
+				<td><%=@c+=1%></td>
+				<td><%=e.email%></td>
+				<td><%=e.created_at.to_date.to_formatted_s(:rfc822)%> (<%=time_ago_in_words(e.created_at)%>)</td>
+			</tr>
+		<%end%>
+	</tbody>
+</table>
+</div>
