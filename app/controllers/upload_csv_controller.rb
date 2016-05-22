@@ -29,9 +29,14 @@ class UploadCsvController < ApplicationController
 					else
 		        @email=EmailRecord.find_by_email(row[1])
 		        if !@email
+		        	email=Array.new
 		          @email=EmailRecord.create(:email=>row[1])
+		          email<<@email.email
+		          @str=email.join(',')
+		          p"-------#{email}"
 		        else
 	              @email.update_attributes(:email=>row[1])
+	              p"-------#{email}"
 	            end
 			    end
 	        @i+=1
@@ -48,11 +53,6 @@ class UploadCsvController < ApplicationController
 	end
 
 	def show
-	  @emails=EmailRecord.all
-  	email=Array.new
-  	@emails.each do |e| 
-  	  email<<e
-    end 
-    @str=email.join(',')
+	  
   end
 end
