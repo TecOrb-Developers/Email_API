@@ -1,3 +1,4 @@
+include ApplicationHelper
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
@@ -44,8 +45,8 @@ Rails.application.configure do
 
      
 ActionMailer::Base.smtp_settings = {
-  :user_name => 'fun.all.here@gmail.com',
-  :password => 'escort@tecorb',
+  :user_name => eml['email'],
+  :password => eml['pass'],
   :domain => 'gmail.com',
   :address => 'smtp.gmail.com',
   :port => 587,
