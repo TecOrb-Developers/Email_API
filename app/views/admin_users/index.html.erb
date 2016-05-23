@@ -1,2 +1,29 @@
-<h1>AdminUsers#index</h1>
-<p>Find me in app/views/admin_users/index.html.erb</p>
+<div class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 margin-top-6" role="dialog"> 
+  <div class="panel-group">
+    <div class="panel panel-info" >
+      <div class="panel-heading">Email Csv</div><br>
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="alert alert-warning">
+            Be carefull while uploading CSV. This should be in same format as seen here otherwise data may be inconsistance.
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="alert alert-success"><img src="/assets/emails.png" width="100%"></div>
+        </div>
+      </div>
+      <div style="padding-top:30px" class="panel-body" >
+        <div style="display:none" id="login-alert" class="alert alert-danger col-sm-12"></div>
+        <%=form_for :email_upload,url: upload_emails_csv_path,:html=>{:class=>"form-inline"} ,method: :post do |f|%>
+          <%= f.file_field :email, :placeholder=>"Search email-id", :class=> 'form-control',:required=>"true" %>
+          <%= f.submit "Upload Csv to send mail", :class=>'btn btn-primary' %>
+        <%end%> 
+      </div> 
+      <div class="panel-footer margin-top-2">
+        <%#= link_to "Send Email",send_email_path%>
+      </div>
+    </div>                        
+    </div>
+  </div> 
+</div>
+

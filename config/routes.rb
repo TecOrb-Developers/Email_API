@@ -1,10 +1,14 @@
 Rails.application.routes.draw do
-  get 'admin_users/index'
+
   root 'admin_users#new'
 
   
   resources :admin_users
-  resources :upload_csv
+
+  post 'upload_emails_csv'=>"upload_csv#upload_emails_csv"
+  get 'send_email_form'=>"upload_csv#send_email_form"
+  post 'send_email'=>"upload_csv#send_email"
+  get 'all_emails'=>'upload_csv#all_emails'
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
