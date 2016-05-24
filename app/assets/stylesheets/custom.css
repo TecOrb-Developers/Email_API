@@ -41,8 +41,3 @@
     font-size: 250%;
     margin-left: 20% !important;
 }
-.input-group {
-    position: relative;
-    display: table;
-    border-collapse: separate;
-}
