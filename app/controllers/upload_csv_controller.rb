@@ -35,14 +35,18 @@ class UploadCsvController < ApplicationController
   end
 
   def send_email_form
+  	@em=params[:emails].count
+  	p"-------#{@em}"
   	params[:emails].present? ? @emails_str=params[:emails].join(',') : @emails_str=nil
   end
 
 	def send_email
 		if params[:emails].strip !=''
 			em=params[:emails].split(',')
+			em.count
 			em.each do |e|
-			UserMailer.send_mail(e).deliver_now
+				p"----#{e}"
+			UserMailer.send_mail(e).deliver_now 
 			#em.each do |e|
 				SendEmail.create(:email=>e)
 			end
@@ -53,4 +57,5 @@ class UploadCsvController < ApplicationController
 			redirect_to :back
 		end
 	end
+
 end
